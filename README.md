@@ -41,7 +41,7 @@ ICAC Hackathon/
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/LCY-0976/ICAC_Hackathon.git
 cd "ICAC Hackathon"
 ```
 
@@ -184,4 +184,4 @@ This blockchain implementation demonstrates:
 
 ---
 
-**Built with ❤️ for ICAC Hackathon** 
+**Built with ❤️ for ICAC Hackathon**

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Signature Blockchain - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Multi-Signature Blockchain</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="userName">User</span>
+                    <span class="user-id" id="userId"></span>
+                </div>
+                <button onclick="logout()" class="btn-secondary">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dashboard Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="stat-info">
+                    <h3 id="totalUsers">-</h3>
+                    <p>Total Users</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-file-contract"></i>
+                <div class="stat-info">
+                    <h3 id="pendingContracts">-</h3>
+                    <p>Pending Contracts</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+                <div class="stat-info">
+                    <h3 id="completedContracts">-</h3>
+                    <p>Completed Contracts</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-cubes"></i>
+                <div class="stat-info">
+                    <h3 id="blockchainSize">-</h3>
+                    <p>Blockchain Size</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('create')">
+                <i class="fas fa-plus-circle"></i>
+                Create Contract
+            </button>
+            <button class="tab-button" onclick="showTab('pending')">
+                <i class="fas fa-clock"></i>
+                Pending Signatures
+            </button>
+            <button class="tab-button" onclick="showTab('contracts')">
+                <i class="fas fa-list"></i>
+                All Contracts
+            </button>
+            <button class="tab-button" onclick="showTab('blockchain')">
+                <i class="fas fa-cubes"></i>
+                Blockchain
+            </button>
+        </div>
+
+        <!-- Create Contract Tab -->
+        <div id="create-tab" class="tab-content active">
+            <div class="card">
+                <h2><i class="fas fa-plus-circle"></i> Create New Contract</h2>
+                <form id="contractForm">
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label>Amount ($)</label>
+                            <input type="number" id="contractAmount" step="0.01" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Sender</label>
+                            <input type="text" id="contractSender" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Receiver</label>
+                            <input type="text" id="contractReceiver" required>
+                        </div>
+                        <div class="input-group full-width">
+                            <label>Description</label>
+                            <textarea id="contractDescription" rows="3" placeholder="Contract description..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-file-plus"></i>
+                        Create Contract
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Pending Signatures Tab -->
+        <div id="pending-tab" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-clock"></i> Contracts Awaiting Your Signature</h2>
+                <div id="pendingList" class="contract-list">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        Loading pending contracts...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Contracts Tab -->
+        <div id="contracts-tab" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-list"></i> All Contracts</h2>
+                <div class="contracts-header">
+                    <button onclick="refreshContracts()" class="btn-secondary">
+                        <i class="fas fa-refresh"></i>
+                        Refresh
+                    </button>
+                </div>
+                <div id="contractsList" class="contract-list">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        Loading contracts...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blockchain Tab -->
+        <div id="blockchain-tab" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-cubes"></i> Blockchain Explorer</h2>
+                <div class="blockchain-header">
+                    <div class="blockchain-status">
+                        <span class="status-indicator" id="blockchainStatus">
+                            <i class="fas fa-circle"></i>
+                            Checking...
+                        </span>
+                        <button onclick="validateBlockchain()" class="btn-secondary">
+                            <i class="fas fa-check-double"></i>
+                            Validate Chain
+                        </button>
+                    </div>
+                </div>
+                <div id="blockchainList" class="blockchain-list">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        Loading blockchain...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contract Details Modal -->
+    <div id="contractModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Contract Details</h3>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="contractModalBody">
+                <!-- Contract details will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button id="signContractBtn" class="btn-primary" style="display: none;">
+                    <i class="fas fa-signature"></i>
+                    Sign Contract
+                </button>
+                <button onclick="closeModal()" class="btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Block Details Modal -->
+    <div id="blockModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Block Details</h3>
+                <span class="close" onclick="closeBlockModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="blockModalBody">
+                <!-- Block details will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeBlockModal()" class="btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Toast -->
+    <div id="toast" class="toast"></div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html> 

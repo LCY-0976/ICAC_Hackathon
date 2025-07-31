@@ -59,6 +59,14 @@ def test_api():
     except Exception as e:
         print(f"❌ Failed to validate blockchain: {e}")
     
+    # Test 6: Get genesis block
+    try:
+        response = requests.get(f"{base_url}/api/block/0")
+        genesis = response.json()
+        print(f"✅ Genesis Block: {genesis}")
+    except Exception as e:
+        print(f"❌ Failed to get genesis block: {e}")
+    
     print("\n🎉 All tests completed! Your C++ blockchain is working with FastAPI!")
 
 if __name__ == "__main__":

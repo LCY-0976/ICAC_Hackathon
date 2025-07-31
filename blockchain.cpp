@@ -12,16 +12,15 @@ using namespace std;
 // Transaction data
 struct TransactionData {
     double amount;
-    string senderKey;
-    string receiverKey;
+    vector<string> signature;  // Changed to vector<string>
     time_t timestamp;
     
     // Default constructor
-    TransactionData() : amount(0), senderKey(""), receiverKey(""), timestamp(0) {}
+    TransactionData() : amount(0), signature(), timestamp(0) {}
     
-    // Parameterized constructor
-    TransactionData(double amt, string sender, string receiver, time_t ts) 
-        : amount(amt), senderKey(sender), receiverKey(receiver), timestamp(ts) {}
+    // Parameterized constructor - fixed signature parameter
+    TransactionData(double amt, vector<string> sig, time_t ts) 
+        : amount(amt), signature(sig), timestamp(ts) {}
 };
 
 // Block Class
@@ -36,7 +35,14 @@ private:
         hash<string> hash1;
         hash<size_t> hash2;
         hash<size_t> finalHash;
-        string toHash = to_string(data.amount) + data.receiverKey + data.senderKey + to_string(data.timestamp);
+        
+        // Convert signature vector to single string
+        string sigStr;
+        for (const auto& s : data.signature) {
+            sigStr += s;
+        }
+        
+        string toHash = to_string(data.amount) + sigStr + to_string(data.timestamp);
         return finalHash(hash1(toHash) + hash2(previousHash));
     }
 
@@ -50,27 +56,27 @@ public:
     }
 
     // Get original Hash
-    size_t getHash() {
+    size_t getHash() const {
         return blockHash;
     }
 
     // Get previous Hash
-    size_t getPreviousHash() {
+    size_t getPreviousHash() const {
         return previousHash;
     }
 
     // Get Transaction Data
-    TransactionData getData() {
+    TransactionData getData() const {
         return data;
     }
 
     // Validate Hash
-    bool isHashValid() {
+    bool isHashValid() const {
         return generateHash() == blockHash;
     }
     
     // Get index
-    int getIndex() {
+    int getIndex() const {
         return index;
     }
 };
@@ -82,8 +88,7 @@ private:
         time_t current;
         TransactionData d;
         d.amount = 0;
-        d.receiverKey = "None";
-        d.senderKey = "None";
+        d.signature = {"Genesis"};  // Initialize vector with one element
         d.timestamp = time(&current);
 
         hash<int> hash1;
@@ -104,20 +109,19 @@ public:
     // Public functions
     void addBlock(TransactionData d) {
         int index = (int)chain.size();
-        Block newBlock(index, d, getLatestBlock()->getHash());
+        size_t prevHash = chain.back().getHash();  // Get hash directly
+        Block newBlock(index, d, prevHash);
         chain.push_back(newBlock);
     }
 
-    bool isChainValid() {
-        vector<Block>::iterator it;
-        
-        for (it = chain.begin(); it != chain.end(); ++it) {
-            Block currentBlock = *it;
+    bool isChainValid() const {
+        for (size_t i = 0; i < chain.size(); ++i) {
+            const Block& currentBlock = chain[i];
             if (!currentBlock.isHashValid()) {
                 return false;
             }
-            if (it != chain.begin()) {
-                Block previousBlock = *(it - 1);
+            if (i != 0) {
+                const Block& previousBlock = chain[i-1];
                 if (currentBlock.getPreviousHash() != previousBlock.getHash()) {
                     return false;
                 }
@@ -126,21 +130,21 @@ public:
         return true;
     }
 
-    Block* getLatestBlock() {
-        return &chain.back();
+    Block getLatestBlock() const {
+        return chain.back();
     }
     
     // Get chain size
-    size_t getChainSize() {
+    size_t getChainSize() const {
         return chain.size();
     }
     
     // Get block by index
-    Block getBlock(int index) {
-        if (index >= 0 && index < chain.size()) {
+    Block getBlock(int index) const {
+        if (index >= 0 && index < (int)chain.size()) {
             return chain[index];
         }
-        throw std::out_of_range("Block index out of range");
+        throw out_of_range("Block index out of range");
     }
 };
 
@@ -149,10 +153,9 @@ PYBIND11_MODULE(blockchain, m) {
     
     py::class_<TransactionData>(m, "TransactionData")
         .def(py::init<>())
-        .def(py::init<double, string, string, time_t>())
+        .def(py::init<double, vector<string>, time_t>())  // Fixed to use vector<string>
         .def_readwrite("amount", &TransactionData::amount)
-        .def_readwrite("senderKey", &TransactionData::senderKey)
-        .def_readwrite("receiverKey", &TransactionData::receiverKey)
+        .def_readwrite("signature", &TransactionData::signature)
         .def_readwrite("timestamp", &TransactionData::timestamp);
     
     py::class_<Block>(m, "Block")
@@ -167,7 +170,8 @@ PYBIND11_MODULE(blockchain, m) {
         .def(py::init<>())
         .def("addBlock", &Blockchain::addBlock)
         .def("isChainValid", &Blockchain::isChainValid)
+        .def("getLatestBlock", &Blockchain::getLatestBlock)  // Added missing binding
         .def("getChainSize", &Blockchain::getChainSize)
-        .def("getBlock", &Blockchain::getBlock)
-        .def_readwrite("chain", &Blockchain::chain);
+        .def("getBlock", &BlockChain::getBlock)
+        .def_readonly("chain", &Blockchain::chain);  // Changed to readonly for safety
 }

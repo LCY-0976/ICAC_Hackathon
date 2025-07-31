@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Signature Blockchain - Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Multi-Signature Blockchain</h1>
+                <p>Secure Digital Contract Management</p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="loginUserId" placeholder="User ID" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login
+                    </button>
+                </form>
+                <p class="form-toggle">
+                    Don't have an account? 
+                    <a href="#" onclick="toggleForm()">Register here</a>
+                </p>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="register-form" class="form-container" style="display: none;">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <div class="input-group">
+                        <i class="fas fa-user-circle"></i>
+                        <input type="text" id="registerUserName" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="registerUserId" placeholder="User ID" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Register
+                    </button>
+                </form>
+                <p class="form-toggle">
+                    Already have an account? 
+                    <a href="#" onclick="toggleForm()">Login here</a>
+                </p>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Processing...</p>
+            </div>
+
+            <!-- Messages -->
+            <div id="message" class="message"></div>
+
+            <!-- Demo Users Info -->
+            <div class="demo-info">
+                <h3><i class="fas fa-info-circle"></i> Demo Users</h3>
+                <div class="demo-users">
+                    <div class="demo-user">
+                        <strong>Alice Johnson</strong><br>
+                        ID: alice001 | Pass: password123
+                    </div>
+                    <div class="demo-user">
+                        <strong>Bob Smith</strong><br>
+                        ID: bob002 | Pass: securepass
+                    </div>
+                    <div class="demo-user">
+                        <strong>Charlie Brown</strong><br>
+                        ID: charlie003 | Pass: mypassword
+                    </div>
+                    <div class="demo-user">
+                        <strong>Diana Wilson</strong><br>
+                        ID: diana004 | Pass: strongpass
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/login.js"></script>
+</body>
+</html> 

@@ -1,7 +1,9 @@
 from fastapi import FastAPI, Request, HTTPException, Depends
+from fastapi import UploadFile, File, Form
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse
 import uvicorn
 from pydantic import BaseModel
 import blockchain
@@ -10,6 +12,8 @@ import json
 from user_auth import user_manager, User
 from typing import Optional, List, Dict
 import uuid
+import os
+import hashlib
 
 # Create blockchain instance using C++ module
 chain = blockchain.Blockchain()
@@ -47,6 +51,8 @@ app = FastAPI(
 
 # Mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
+UPLOAD_DIR = os.path.join("uploads", "contracts")
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Authentication dependency
 def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> User:
@@ -172,9 +178,21 @@ async def get_all_users():
 # === MULTI-SIGNATURE CONTRACT ENDPOINTS ===
 
 @app.post("/api/contract/create")
-async def create_contract(contract: Contract, current_user: User = Depends(get_current_user)):
+async def create_contract(
+    amount: float = Form(None),
+    sender: str = Form(None),
+    receiver: str = Form(None),
+    timestamp: str = Form(None),
+    description: str = Form(None),
+    pdf_file: UploadFile = File(None),
+    current_user: User = Depends(get_current_user)
+):
     """Create a new contract that requires all users to sign before being added to blockchain"""
     try:
+        # Validate required parameters
+        if not all([amount, sender, receiver, timestamp]):
+            raise HTTPException(status_code=400, detail="Missing required fields: amount, sender, receiver, timestamp")
+        
         # Generate unique contract ID
         contract_id = str(uuid.uuid4())
         
@@ -188,22 +206,61 @@ async def create_contract(contract: Contract, current_user: User = Depends(get_c
         print(f"   Required signatures: {len(required_signatures)} users")
         print(f"   Users: {list(all_users.keys())}")
         
+        # Handle PDF upload if provided
+        pdf_info = {
+            "path": None,
+            "hash": None,
+            "filename": None,
+        }
+        
+        if pdf_file and pdf_file.filename:
+            # Validate content type
+            if pdf_file.content_type not in ("application/pdf", "application/octet-stream"):
+                raise HTTPException(status_code=400, detail="Only PDF files are allowed")
+            
+            # Save file
+            safe_name = f"{contract_id}.pdf"
+            dest_path = os.path.join(UPLOAD_DIR, safe_name)
+            content = await pdf_file.read()
+            with open(dest_path, "wb") as f:
+                f.write(content)
+            
+            # Compute SHA-256 hash
+            pdf_hash = hashlib.sha256(content).hexdigest()
+            
+            pdf_info = {
+                "path": dest_path,
+                "hash": pdf_hash,
+                "filename": pdf_file.filename,
+            }
+            
+            print(f"📄 DEBUG - PDF uploaded with contract:")
+            print(f"   Filename: {pdf_file.filename}")
+            print(f"   Hash: {pdf_hash[:16]}...")
+        
+        # Create contract description with PDF hash if available
+        contract_description = description or f"Transaction from {sender} to {receiver}"
+        if pdf_info["hash"]:
+            hshort = pdf_info["hash"][:8]
+            contract_description += f" | pdf:{hshort}"
+        
         # Create pending contract
         pending_contract = {
             "contract_id": contract_id,
             "creator": current_user.user_id,
             "creator_name": current_user.user_name,
             "contract_data": {
-                "amount": contract.amount,
-                "sender": contract.sender,
-                "receiver": contract.receiver,
-                "timestamp": contract.timestamp,
-                "description": contract.description or f"Transaction from {contract.sender} to {contract.receiver}"
+                "amount": amount,
+                "sender": sender,
+                "receiver": receiver,
+                "timestamp": timestamp,
+                "description": contract_description
             },
             "required_signatures": required_signatures,
             "signatures": {},  # user_id -> e_signature
             "status": "pending",
-            "created_at": time.time()
+            "created_at": time.time(),
+            "pdf": pdf_info
         }
         
         # Automatically add creator's signature
@@ -215,7 +272,7 @@ async def create_contract(contract: Contract, current_user: User = Depends(get_c
         print(f"✅ DEBUG - Contract created with ID: {contract_id}")
         print(f"   Signatures: 1/{len(required_signatures)} (creator signed automatically)")
         
-        return {
+        response_data = {
             "message": "Contract created successfully and requires all user signatures",
             "contract_id": contract_id,
             "contract": pending_contract["contract_data"],
@@ -225,6 +282,21 @@ async def create_contract(contract: Contract, current_user: User = Depends(get_c
             "status": "pending",
             "next_step": f"Share contract ID {contract_id} with other users to collect signatures"
         }
+        
+        # Add PDF info if uploaded
+        if pdf_info["hash"]:
+            response_data["pdf"] = {
+                "uploaded": True,
+                "filename": pdf_info["filename"],
+                "hash": pdf_info["hash"]
+            }
+        else:
+            response_data["pdf"] = {
+                "uploaded": False,
+                "message": "No PDF was uploaded with this contract"
+            }
+        
+        return response_data
         
     except Exception as e:
         print(f"❌ DEBUG - Error creating contract: {str(e)}")
@@ -278,6 +350,12 @@ async def sign_contract(signature_request: ContractSignature, current_user: User
             transaction_data.amount = contract_data["amount"]
             transaction_data.senderKey = contract_data["sender"]
             transaction_data.receiverKey = contract_data["receiver"]
+            
+            # Add all signatures to the blockchain record
+            signatures_list = []
+            for user_id, signature in pending_contract["signatures"].items():
+                signatures_list.append(f"{user_id}:{signature[:20]}...")  # Truncate for storage
+            transaction_data.signature = signatures_list
             
             # Convert timestamp
             try:
@@ -378,6 +456,7 @@ async def get_contract_status(contract_id: str):
             "status": contract["status"],
             "contract_data": contract["contract_data"],
             "creator": contract["creator_name"],
+            "pdf": contract.get("pdf"),
             "signatures_received": len(contract["signatures"]),
             "signatures_required": len(contract["required_signatures"]),
             "signers": signers,
@@ -444,6 +523,7 @@ async def get_all_contracts():
                 "status": contract["status"],
                 "contract_data": contract["contract_data"],
                 "creator": contract["creator_name"],
+                "pdf": contract.get("pdf"),
                 "signatures_received": len(contract["signatures"]),
                 "signatures_required": len(contract["required_signatures"]),
                 "signed_by": signer_names,
@@ -461,6 +541,45 @@ async def get_all_contracts():
     except Exception as e:
         print(f"❌ DEBUG - Error getting all contracts: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to get all contracts: {str(e)}")
+
+# === CONTRACT PDF UPLOAD/DOWNLOAD ===
+
+@app.post("/api/contract/{contract_id}/upload-pdf")
+async def upload_contract_pdf(contract_id: str, file: UploadFile = File(...), current_user: User = Depends(get_current_user)):
+    """DEPRECATED: PDF upload after contract creation is no longer allowed. PDFs must be uploaded during contract creation."""
+    raise HTTPException(
+        status_code=403, 
+        detail="PDF upload after contract creation is not allowed. PDF documents can only be uploaded during contract creation."
+    )
+
+
+@app.get("/api/contract/{contract_id}/pdf")
+async def download_contract_pdf(contract_id: str):
+    """Download/view the PDF file associated with a contract. Accessible to all users for transparency during signing process."""
+    try:
+        if contract_id not in pending_contracts:
+            raise HTTPException(status_code=404, detail="Contract not found")
+
+        contract = pending_contracts[contract_id]
+        pdf_meta = contract.get("pdf") or {}
+        path = pdf_meta.get("path")
+        if not path or not os.path.isfile(path):
+            raise HTTPException(status_code=404, detail="PDF document not found for this contract")
+
+        print(f"📄 DEBUG - PDF accessed for contract {contract_id}")
+        print(f"   Filename: {pdf_meta.get('filename')}")
+        print(f"   Hash: {pdf_meta.get('hash', '')[:16]}...")
+
+        return FileResponse(
+            path, 
+            media_type="application/pdf", 
+            filename=pdf_meta.get("filename") or f"contract_{contract_id}.pdf"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"❌ DEBUG - Error downloading PDF: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to download PDF: {str(e)}")
 
 # === LEGACY BLOCKCHAIN ENDPOINTS (for backward compatibility) ===
 
@@ -537,4 +656,4 @@ async def get_blockchain_info():
         raise HTTPException(status_code=500, detail=f"Info retrieval failed: {str(e)}")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)

@@ -58,34 +58,101 @@ ICAC Hackathon/
 └── README.md             # This file
 ```
 
-## 🛠️ Installation & Setup
+## 🛠️ Detailed Installation Guide
+
+This guide provides step-by-step instructions to set up the ICAC Hackathon project, including Python dependencies, Node.js setup, C++ module compilation, and LightRAG integration.
 
 ### Prerequisites
-- Python 3.11+
-- C++ compiler (clang++ on macOS)
-- pip or conda
+- Python 3.11 or higher
+- Node.js 18+ and npm
+- C++ compiler (e.g., g++ or clang++)
+- Git
+- Optional: Docker for containerized deployment
 
-### 1. Clone the Repository
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/LCY-0976/ICAC_Hackathon.git
-cd "ICAC Hackathon"
+cd ICAC\ Hackathon
 ```
 
-### 2. Install Dependencies
+### Step 2: Set Up Python Environment
+Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Unix/macOS
+venv\\Scripts\\activate  # On Windows
+```
+
+Install Python dependencies:
 ```bash
 pip install -r requirements.txt
-pip install pybind11
+pip install pybind11  # If not already included
 ```
 
-### 3. Build C++ Module
+### Step 3: Build C++ Blockchain Module
+Compile the C++ extension:
 ```bash
 python setup.py build_ext --inplace
 ```
 
-### 4. Start the API Server
+### Step 4: Set Up Node.js Dependencies
+Install npm packages:
 ```bash
-python -m uvicorn api:app --host 0.0.0.0 --port 8000
+npm install
 ```
+
+### Step 5: Install and Configure LightRAG
+LightRAG is integrated for RAG capabilities. Install it:
+```bash
+pip install "lightrag-hku[api]"
+cp LightRAG/env.example LightRAG/.env  # Configure .env with your API keys
+```
+
+For Ollama-based models (if used):
+- Install Ollama: Follow instructions at https://ollama.com
+- Pull required models: `ollama pull mistral-nemo:latest`
+
+### Step 6: Configure Environment Variables
+Create a `.env` file in the root directory with necessary configurations:
+```
+OPENAI_API_KEY=your_openai_key  # If using OpenAI
+LLM_MODEL=mistral-nemo:latest   # For LightRAG
+```
+
+### Step 7: Run the Application
+Start the FastAPI server:
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+```
+
+For LightRAG server (if needed separately):
+```bash
+cd LightRAG
+lightrag-server
+```
+
+### Step 8: Test the Setup
+Run the test scripts:
+```bash
+python test_api.py
+python test_auth_api.py
+python test_frontend_demo.py
+python test_multisig_api.py
+```
+
+### Docker Deployment (Optional)
+Build and run with Docker:
+```bash
+docker build -t icac-hackathon .
+docker run -p 8000:8000 icac-hackathon
+```
+
+### Troubleshooting
+- If C++ build fails: Ensure pybind11 is installed and compiler is in PATH.
+- LightRAG issues: Check Ollama is running and model is pulled.
+- API errors: Verify .env configurations and user registrations.
+
+For more details, see the API Endpoints section below.
 
 ## 🌐 API Endpoints
 

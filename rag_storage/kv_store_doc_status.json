@@ -1,0 +1,20 @@
+{
+  "doc-734ce99a9465c4d1373cce9eb225affb": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-31e5da080804dc3bfe2e75e8d062bd8b",
+      "chunk-f1f2fb0e492bc1d3aef833a36a0fa98a"
+    ],
+    "content_summary": "Please\n \nprovide\n \na\n \nsummary\n \nof\n \nyour\n \npreliminary\n \nproposal\n \n(not\n \nmore\n \nthan\n \n600\n \nwords),\n \ncovering\n \nthe\n \ncorruption-related\n \nproblem(s),\n \nyour\n \nidea/solution\n \nto\n \naddress\n \nsuch\n \nproblem(s),\n \nthe\n \ntechnologies\n \nto\n \nbe\n \na...",
+    "content_length": 4695,
+    "created_at": "2025-08-15T12:27:08.784079+00:00",
+    "updated_at": "2025-08-15T12:31:41.527221+00:00",
+    "file_path": "ICAC proposal.pdf",
+    "track_id": "upload_20250815_202708_c70303d0",
+    "metadata": {
+      "processing_start_time": 1755260828,
+      "processing_end_time": 1755261101
+    }
+  }
+}

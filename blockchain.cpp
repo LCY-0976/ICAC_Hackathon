@@ -12,15 +12,17 @@ using namespace std;
 // Transaction data
 struct TransactionData {
     double amount;
-    vector<string> signature;  // Changed to vector<string>
+    string senderKey;
+    string receiverKey;
+    vector<string> signature;  // Multi-signature support
     time_t timestamp;
     
     // Default constructor
-    TransactionData() : amount(0), signature(), timestamp(0) {}
+    TransactionData() : amount(0), senderKey(""), receiverKey(""), signature(), timestamp(0) {}
     
-    // Parameterized constructor - fixed signature parameter
-    TransactionData(double amt, vector<string> sig, time_t ts) 
-        : amount(amt), signature(sig), timestamp(ts) {}
+    // Parameterized constructor
+    TransactionData(double amt, string sender, string receiver, vector<string> sig, time_t ts) 
+        : amount(amt), senderKey(sender), receiverKey(receiver), signature(sig), timestamp(ts) {}
 };
 
 // Block Class
@@ -31,7 +33,7 @@ private:
     size_t previousHash;
     TransactionData data;
 
-    size_t generateHash() {
+    size_t generateHash() const {
         hash<string> hash1;
         hash<size_t> hash2;
         hash<size_t> finalHash;
@@ -42,7 +44,7 @@ private:
             sigStr += s;
         }
         
-        string toHash = to_string(data.amount) + sigStr + to_string(data.timestamp);
+        string toHash = to_string(data.amount) + data.senderKey + data.receiverKey + sigStr + to_string(data.timestamp);
         return finalHash(hash1(toHash) + hash2(previousHash));
     }
 
@@ -153,8 +155,10 @@ PYBIND11_MODULE(blockchain, m) {
     
     py::class_<TransactionData>(m, "TransactionData")
         .def(py::init<>())
-        .def(py::init<double, vector<string>, time_t>())  // Fixed to use vector<string>
+        .def(py::init<double, string, string, vector<string>, time_t>())
         .def_readwrite("amount", &TransactionData::amount)
+        .def_readwrite("senderKey", &TransactionData::senderKey)
+        .def_readwrite("receiverKey", &TransactionData::receiverKey)
         .def_readwrite("signature", &TransactionData::signature)
         .def_readwrite("timestamp", &TransactionData::timestamp);
     
@@ -172,6 +176,6 @@ PYBIND11_MODULE(blockchain, m) {
         .def("isChainValid", &Blockchain::isChainValid)
         .def("getLatestBlock", &Blockchain::getLatestBlock)  // Added missing binding
         .def("getChainSize", &Blockchain::getChainSize)
-        .def("getBlock", &BlockChain::getBlock)
+        .def("getBlock", &Blockchain::getBlock)
         .def_readonly("chain", &Blockchain::chain);  // Changed to readonly for safety
 }

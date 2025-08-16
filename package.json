@@ -1,0 +1,17 @@
+{
+  "name": "icac-hackathon",
+  "version": "1.0.0",
+  "description": "A high-performance blockchain implementation written in C++ with Python FastAPI integration and user authentication system, built for the ICAC Hackathon.",
+  "main": "FirebaseInit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node FirebaseInit.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.14.1"
+  },
+  "type": "module"
+}

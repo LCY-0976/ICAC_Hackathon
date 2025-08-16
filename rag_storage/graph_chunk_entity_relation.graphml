@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Corruption">
+      <data key="d0">Corruption</data>
+      <data key="d1">category</data>
+      <data key="d2">The issue targeted by the blockchain solution within infrastructure projects, combated through preventive and remedial measures to enhance integrity.&lt;SEP&gt;The problem occurring during infrastructure project development cycles, leading to financial losses and safety violations. Specifically involves contract tampering.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b&lt;SEP&gt;chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Infrastructure Projects">
+      <data key="d0">Infrastructure Projects</data>
+      <data key="d1">category</data>
+      <data key="d2">Construction and development initiatives that the blockchain solution aims to manage, described as the city's structural foundation where corruption occurs.&lt;SEP&gt;Projects forming civilization foundations like highways and hospitals. Vulnerable to corruption during development cycles.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b&lt;SEP&gt;chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Blockchain">
+      <data key="d0">Blockchain</data>
+      <data key="d1">category</data>
+      <data key="d2">Technology proposed to create immutable/transparent contract systems. Prevents data tampering, enables mutual monitoring, and provides investigation evidence for corruption cases.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Contracts">
+      <data key="d0">Contracts</data>
+      <data key="d1">category</data>
+      <data key="d2">Agreements serving as failsafes (providing verifiable paper trails) but also vulnerabilities when tampered with during project implementation.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Paper Contracts">
+      <data key="d0">Paper Contracts</data>
+      <data key="d1">category</data>
+      <data key="d2">Conventional contract formats susceptible to tampering, creating entry points for corruption.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Government">
+      <data key="d0">Government</data>
+      <data key="d1">organization</data>
+      <data key="d2">The government suffers significant financial losses due to corruption in infrastructure projects according to the text.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Safety Standards">
+      <data key="d0">Safety Standards</data>
+      <data key="d1">category</data>
+      <data key="d2">Standards that are violated due to corruption in infrastructure projects, leading to casualties as mentioned in the text.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Energy Consumption">
+      <data key="d0">Energy Consumption</data>
+      <data key="d1">category</data>
+      <data key="d2">A pressing issue with blockchain technology mainly attributed to its consensus mechanism, discussed as a challenge requiring solution.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261099</data>
+    </node>
+    <node id="Consensus Mechanism">
+      <data key="d0">Consensus Mechanism</data>
+      <data key="d1">category</data>
+      <data key="d2">A component of blockchain technology contributing to its high energy consumption, identified as a problem needing innovation.</data>
+      <data key="d3">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261100</data>
+    </node>
+    <node id="Blockchain Solution">
+      <data key="d0">Blockchain Solution</data>
+      <data key="d1">category</data>
+      <data key="d2">A system being developed to manage infrastructure projects through custom blockchain technology, including a proprietary consensus mechanism and core features while removing unnecessary elements.</data>
+      <data key="d3">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261100</data>
+    </node>
+    <node id="Proprietary Consensus Mechanism">
+      <data key="d0">Proprietary Consensus Mechanism</data>
+      <data key="d1">category</data>
+      <data key="d2">A custom blockchain component being developed as part of the blockchain solution's implementation plans.</data>
+      <data key="d3">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261100</data>
+    </node>
+    <node id="Core Blockchain Characteristics">
+      <data key="d0">Core Blockchain Characteristics</data>
+      <data key="d1">category</data>
+      <data key="d2">Fundamental attributes of blockchain technology retained in the solution's design while removing unnecessary elements.</data>
+      <data key="d3">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d4">ICAC proposal.pdf</data>
+      <data key="d5">1755261100</data>
+    </node>
+    <edge source="Corruption" target="Infrastructure Projects">
+      <data key="d6">18.0</data>
+      <data key="d7">Corruption directly undermines project integrity during development cycles, causing financial losses and safety failures in infrastructure projects.&lt;SEP&gt;Corruption is identified as occurring within infrastructure projects, necessitating intervention.</data>
+      <data key="d8">misconduct domain,problem context,project vulnerability,systemic risk</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b&lt;SEP&gt;chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Corruption" target="Government">
+      <data key="d6">9.0</data>
+      <data key="d7">Corruption directly causes significant financial losses to the government through infrastructure projects.</data>
+      <data key="d8">financial impact,public loss</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Corruption" target="Safety Standards">
+      <data key="d6">10.0</data>
+      <data key="d7">Corruption leads to violations of safety standards resulting in casualties during infrastructure project development.</data>
+      <data key="d8">regulatory failure,safety compromise</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Corruption" target="Contracts">
+      <data key="d6">10.0</data>
+      <data key="d7">Vulnerable contracts enable corruption through tampering, especially paper contracts which lack tamper-proof mechanisms.</data>
+      <data key="d8">exploitable weakness,misconduct enabler</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Corruption" target="Blockchain Solution">
+      <data key="d6">10.0</data>
+      <data key="d7">The solution aims to provide preventive and remedial advantages against corruption in infrastructure projects.</data>
+      <data key="d8">corruption mitigation,integrity enhancement</data>
+      <data key="d9">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Corruption" target="Blockchain">
+      <data key="d6">10.0</data>
+      <data key="d7">Blockchain prevents corruption by securing contracts, and aids remediation by providing investigation-ready evidence through traceable data.</data>
+      <data key="d8">accountability tool,prevention mechanism</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Infrastructure Projects" target="Contracts">
+      <data key="d6">9.0</data>
+      <data key="d7">Contracts define agreements between parties during implementation stages of infrastructure projects, serving as foundational documents.</data>
+      <data key="d8">legal framework,project governance</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Infrastructure Projects" target="Blockchain Solution">
+      <data key="d6">9.0</data>
+      <data key="d7">The blockchain solution is specifically designed to manage infrastructure projects through tailored features.</data>
+      <data key="d8">management system,solution application</data>
+      <data key="d9">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Blockchain" target="Contracts">
+      <data key="d6">10.0</data>
+      <data key="d7">Blockchain secures contracts by providing immutable storage and transparency, directly addressing tampering vulnerabilities in conventional systems.</data>
+      <data key="d8">security enhancement,technological safeguard</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Blockchain" target="Energy Consumption">
+      <data key="d6">10.0</data>
+      <data key="d7">Blockchain technology inherently suffers from high energy consumption due to its consensus mechanism.</data>
+      <data key="d8">efficiency challenge,technical limitation</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Blockchain" target="Consensus Mechanism">
+      <data key="d6">8.0</data>
+      <data key="d7">Blockchain networks rely on consensus mechanisms to achieve trustlessness, contributing to system architecture.</data>
+      <data key="d8">operational requirement,technical foundation</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Energy Consumption" target="Consensus Mechanism">
+      <data key="d6">10.0</data>
+      <data key="d7">High energy consumption of blockchains is primarily caused by the consensus mechanism used in their networks.</data>
+      <data key="d8">energy inefficiency,technical dependency</data>
+      <data key="d9">chunk-31e5da080804dc3bfe2e75e8d062bd8b</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261100</data>
+    </edge>
+    <edge source="Blockchain Solution" target="Proprietary Consensus Mechanism">
+      <data key="d6">9.0</data>
+      <data key="d7">The blockchain solution includes the development of a proprietary consensus mechanism as part of its implementation plan.</data>
+      <data key="d8">solution component,technology customization</data>
+      <data key="d9">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+    <edge source="Blockchain Solution" target="Core Blockchain Characteristics">
+      <data key="d6">8.0</data>
+      <data key="d7">The blockchain solution retains core blockchain characteristics while optimizing functionality for infrastructure projects.</data>
+      <data key="d8">feature optimization,technology preservation</data>
+      <data key="d9">chunk-f1f2fb0e492bc1d3aef833a36a0fa98a</data>
+      <data key="d10">ICAC proposal.pdf</data>
+      <data key="d11">1755261101</data>
+    </edge>
+  </graph>
+</graphml>

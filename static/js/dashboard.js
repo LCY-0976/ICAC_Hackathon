@@ -48,6 +48,24 @@ function setupEventListeners() {
     // Sign contract button in modal
     document.getElementById('signContractBtn').addEventListener('click', handleSignContract);
     
+    // File input change handler
+    document.getElementById('contractPdf').addEventListener('change', function(event) {
+        const fileLabel = document.getElementById('fileLabel');
+        const file = event.target.files[0];
+        
+        if (file) {
+            if (file.type !== 'application/pdf') {
+                showToast('Please select a PDF file only', 'error');
+                event.target.value = '';
+                fileLabel.textContent = 'Choose PDF file...';
+                return;
+            }
+            fileLabel.textContent = file.name;
+        } else {
+            fileLabel.textContent = 'Choose PDF file...';
+        }
+    });
+    
     // Close modals when clicking outside
     window.addEventListener('click', function(event) {
         const contractModal = document.getElementById('contractModal');
@@ -318,6 +336,7 @@ async function handleCreateContract(event) {
     const sender = document.getElementById('contractSender').value.trim();
     const receiver = document.getElementById('contractReceiver').value.trim();
     const description = document.getElementById('contractDescription').value.trim();
+    const pdfFile = document.getElementById('contractPdf').files[0];
     
     if (!amount || !sender || !receiver) {
         showToast('Please fill in all required fields', 'error');
@@ -325,28 +344,40 @@ async function handleCreateContract(event) {
     }
     
     try {
+        // Use FormData to handle file upload
+        const formData = new FormData();
+        formData.append('amount', amount.toString());
+        formData.append('sender', sender);
+        formData.append('receiver', receiver);
+        formData.append('timestamp', Math.floor(Date.now() / 1000).toString());
+        formData.append('description', description || `Transaction from ${sender} to ${receiver}`);
+        
+        // Add PDF file if selected
+        if (pdfFile) {
+            formData.append('pdf_file', pdfFile);
+        }
+        
         const response = await fetch(`${API_BASE_URL}/api/contract/create`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${authToken}`
+                // Don't set Content-Type header - let browser set it for FormData
             },
-            body: JSON.stringify({
-                amount: amount,
-                sender: sender,
-                receiver: receiver,
-                timestamp: Math.floor(Date.now() / 1000).toString(),
-                description: description || `Transaction from ${sender} to ${receiver}`
-            })
+            body: formData
         });
         
         const data = await response.json();
         
         if (response.ok) {
-            showToast('Contract created successfully!', 'success');
+            let message = 'Contract created successfully!';
+            if (data.pdf && data.pdf.uploaded) {
+                message += ` PDF "${data.pdf.filename}" uploaded and anchored to blockchain.`;
+            }
+            showToast(message, 'success');
             
             // Clear form
             document.getElementById('contractForm').reset();
+            document.getElementById('fileLabel').textContent = 'Choose PDF file...';
             
             // Refresh data
             await loadDashboardData();
@@ -386,10 +417,11 @@ function displayContractModal(contract) {
     const modalBody = document.getElementById('contractModalBody');
     const signButton = document.getElementById('signContractBtn');
     
-    // Check if current user can sign this contract
     const canSign = contract.status === 'pending' && 
                    contract.pending_signers.some(signer => signer.user_id === currentUser.user_id);
-    
+
+    const hasPdf = contract.pdf && contract.pdf.path;
+
     modalBody.innerHTML = `
         <div class="contract-modal-content">
             <div class="detail-item">
@@ -418,7 +450,7 @@ function displayContractModal(contract) {
             </div>
             <div class="detail-item">
                 <div class="detail-label">Description</div>
-                <div class="detail-value">${contract.contract_data.description}</div>
+                <div class="detail-value">${contract.contract_data.description || '-'}</div>
             </div>
             <div class="detail-item">
                 <div class="detail-label">Creator</div>
@@ -445,7 +477,7 @@ function displayContractModal(contract) {
             </div>
             ` : ''}
         </div>
-        
+
         <div class="signatures-section">
             <h4>Signatures</h4>
             <div class="signatures-grid">
@@ -465,15 +497,45 @@ function displayContractModal(contract) {
                 `).join('')}
             </div>
         </div>
+
+        <div class="signatures-section">
+            <h4><i class="fas fa-file-pdf"></i> Contract PDF</h4>
+            <div class="signatures-grid">
+                <div class="signature-item ${hasPdf ? 'signed' : 'pending'}">
+                    <i class="fas ${hasPdf ? 'fa-check-circle' : 'fa-times-circle'}"></i>
+                    <span>${hasPdf ? 'PDF Document Attached' : 'No PDF Document'}</span>
+                    <small>${hasPdf ? ('SHA256: ' + contract.pdf.hash.substring(0,16) + '... | Filename: ' + contract.pdf.filename) : 'This contract was created without a PDF document'}</small>
+                </div>
+            </div>
+
+            ${hasPdf ? `
+            <div style="margin-top:12px; display:flex; gap:10px;">
+                <a class="btn-primary" style="flex:1; text-decoration:none; text-align:center;" href="${API_BASE_URL}/api/contract/${contract.contract_id}/pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View PDF Document
+                </a>
+                <a class="btn-secondary" style="flex:1; text-decoration:none; text-align:center;" href="${API_BASE_URL}/api/contract/${contract.contract_id}/pdf" download>
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+            ` : `
+            <div style="margin-top:12px;">
+                <div class="alert-info">
+                    <i class="fas fa-info-circle"></i>
+                    PDF documents can only be uploaded during contract creation. This contract was created without a PDF attachment.
+                </div>
+            </div>
+            `}
+        </div>
     `;
-    
-    // Show/hide sign button
+
     if (canSign) {
         signButton.style.display = 'block';
     } else {
         signButton.style.display = 'none';
     }
-    
+
+    // No upload functionality during signing - PDFs can only be uploaded during contract creation
+
     document.getElementById('contractModal').style.display = 'block';
 }
 

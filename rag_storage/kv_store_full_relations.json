@@ -1,0 +1,66 @@
+{
+  "doc-734ce99a9465c4d1373cce9eb225affb": {
+    "relation_pairs": [
+      [
+        "Blockchain Solution",
+        "Proprietary Consensus Mechanism"
+      ],
+      [
+        "Corruption",
+        "Government"
+      ],
+      [
+        "Blockchain",
+        "Energy Consumption"
+      ],
+      [
+        "Consensus Mechanism",
+        "Energy Consumption"
+      ],
+      [
+        "Corruption",
+        "Safety Standards"
+      ],
+      [
+        "Blockchain",
+        "Contracts"
+      ],
+      [
+        "Blockchain",
+        "Consensus Mechanism"
+      ],
+      [
+        "Corruption",
+        "Infrastructure Projects"
+      ],
+      [
+        "Contracts",
+        "Corruption"
+      ],
+      [
+        "Blockchain Solution",
+        "Core Blockchain Characteristics"
+      ],
+      [
+        "Blockchain Solution",
+        "Corruption"
+      ],
+      [
+        "Blockchain",
+        "Corruption"
+      ],
+      [
+        "Contracts",
+        "Infrastructure Projects"
+      ],
+      [
+        "Blockchain Solution",
+        "Infrastructure Projects"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1755261101,
+    "update_time": 1755261101,
+    "_id": "doc-734ce99a9465c4d1373cce9eb225affb"
+  }
+}

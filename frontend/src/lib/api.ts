@@ -219,6 +219,34 @@ export interface BatchCorruptionAnalysis {
   }>;
 }
 
+// Word Analysis Types
+export interface WordAnalysisRequest {
+  contract_id: string;
+  analysis_type: 'sensitive_word_detection';
+  use_lightrag?: boolean;
+  lightrag_api_url?: string;
+}
+
+export interface WordAnalysisResult {
+  text_content: string;
+  analysis_type: string;
+  corruption_risk_level: string;
+  risk_score: number;
+  key_findings: string[];
+  risk_indicators: string[];
+  red_flags: string[];
+  recommendations: string[];
+  analysis_details: string;
+  analysis_timestamp: string;
+}
+
+export interface WordAnalysisResponse {
+  success: boolean;
+  message: string;
+  analysis_type: 'lightrag_advanced' | 'enhanced_rules';
+  word_analysis?: WordAnalysisResult;
+}
+
 // Auth API
 export const authAPI = {
   register: async (userData: RegisterRequest) => {
@@ -379,13 +407,26 @@ export const corruptionAPI = {
     const response = await api.post(`/api/corruption/analyze/${contractId}`, {
       contract_id: contractId,
       use_lightrag: useLightRAG,
-      lightrag_api_url: 'http://localhost:8020'
+      lightrag_api_url: 'http://localhost:9621'
     });
     return response.data;
   },
 
   batchAnalyze: async (): Promise<BatchCorruptionAnalysis> => {
     const response = await api.get('/api/corruption/batch-analyze');
+    return response.data;
+  },
+};
+
+// Word Analysis API
+export const wordAnalysisAPI = {
+  analyzeContract: async (request: WordAnalysisRequest): Promise<WordAnalysisResponse> => {
+    const response = await api.post('/api/word/analyze', {
+      contract_id: request.contract_id,
+      analysis_type: request.analysis_type,
+      use_lightrag: request.use_lightrag ?? true,
+      lightrag_api_url: request.lightrag_api_url ?? 'http://localhost:9621'
+    });
     return response.data;
   },
 };

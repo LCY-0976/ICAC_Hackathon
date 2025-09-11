@@ -3,44 +3,44 @@ import { Link } from 'react-router-dom';
 import { 
   Shield, 
   AlertTriangle, 
-  CheckCircle, 
   Zap, 
   FileText, 
   BarChart3,
-  Search,
   Bot,
-  Calendar
+  Calendar,
+  MessageSquare,
+  Send
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 import { useAuth } from '@/contexts/AuthContext';
 import { 
   contractAPI, 
-  corruptionAPI, 
+  corruptionAPI,
+  wordAnalysisAPI,
   type PendingContract, 
-  type CorruptionAnalysisResponse,
-  type BatchCorruptionAnalysis 
+  type BatchCorruptionAnalysis,
+  type WordAnalysisResponse,
+  type WordAnalysisRequest 
 } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 
-type TabType = 'overview' | 'individual' | 'batch';
+type TabType = 'overview' | 'batch' | 'word-analysis';
 
 export function CorruptionAnalysisPage() {
   const { } = useAuth();
   const [activeTab, setActiveTab] = useState<TabType>('overview');
   const [contracts, setContracts] = useState<PendingContract[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedContract, setSelectedContract] = useState<string>('');
-  const [analysisResult, setAnalysisResult] = useState<CorruptionAnalysisResponse | null>(null);
   const [batchResult, setBatchResult] = useState<BatchCorruptionAnalysis | null>(null);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [isBatchAnalyzing, setIsBatchAnalyzing] = useState(false);
+  const [selectedContractId, setSelectedContractId] = useState<string>('');
+  const [wordAnalysisType] = useState<'sensitive_word_detection'>('sensitive_word_detection');
+  const [wordAnalysisResult, setWordAnalysisResult] = useState<WordAnalysisResponse | null>(null);
+  const [isWordAnalyzing, setIsWordAnalyzing] = useState(false);
   const [error, setError] = useState('');
-  const useLightRAG = true; // Always use LightRAG
 
   useEffect(() => {
     const fetchContracts = async () => {
@@ -72,31 +72,6 @@ export function CorruptionAnalysisPage() {
     fetchContracts();
   }, []);
 
-  const handleIndividualAnalysis = async (contractId: string) => {
-    if (!contractId) return;
-
-    try {
-      setIsAnalyzing(true);
-      setError('');
-      setAnalysisResult(null);
-
-      const response = await corruptionAPI.analyzeContract(contractId, useLightRAG);
-      console.log('Analysis response:', response);
-      console.log('LightRAG Analysis:', response.lightrag_analysis);
-      console.log('Fallback Analysis:', response.fallback_analysis);
-      console.log('Analysis Type:', response.analysis_type);
-      setAnalysisResult(response);
-    } catch (error: any) {
-      console.error('Analysis error:', error);
-      if (error.response?.status === 503) {
-        setError('LightRAG service is unavailable. Please ensure LightRAG is running and try again.');
-      } else {
-        setError('Failed to analyze contract. Please check that LightRAG is running and try again.');
-      }
-    } finally {
-      setIsAnalyzing(false);
-    }
-  };
 
   const handleBatchAnalysis = async () => {
     try {
@@ -114,11 +89,40 @@ export function CorruptionAnalysisPage() {
     }
   };
 
-  const filteredContracts = contracts.filter(contract =>
-    !searchTerm || 
-    contract.contract_title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    contract.contract_id.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const handleWordAnalysis = async () => {
+    if (!selectedContractId) {
+      setError('Please select a contract for analysis.');
+      return;
+    }
+
+    try {
+      setIsWordAnalyzing(true);
+      setError('');
+      setWordAnalysisResult(null);
+
+      const request: WordAnalysisRequest = {
+        contract_id: selectedContractId,
+        analysis_type: wordAnalysisType,
+        use_lightrag: true,
+        lightrag_api_url: 'http://localhost:9621'
+      };
+
+      const response = await wordAnalysisAPI.analyzeContract(request);
+      setWordAnalysisResult(response);
+    } catch (error: any) {
+      console.error('Word analysis error:', error);
+      if (error.response?.status === 503) {
+        setError('LightRAG service is unavailable. Please ensure LightRAG is running and try again.');
+      } else if (error.response?.status === 404) {
+        setError('Selected contract not found. Please try again.');
+      } else {
+        setError('Failed to analyze contract. Please check that LightRAG is running and try again.');
+      }
+    } finally {
+      setIsWordAnalyzing(false);
+    }
+  };
+
 
   const getRiskLevelColor = (level: string) => {
     switch (level.toLowerCase()) {
@@ -136,31 +140,12 @@ export function CorruptionAnalysisPage() {
     }
   };
 
-  const getRiskIcon = (level: string) => {
-    switch (level.toLowerCase()) {
-      case 'high':
-      case 'critical':
-        return <AlertTriangle className="text-red-500" size={20} />;
-      case 'medium':
-      case 'moderate':
-        return <Shield className="text-yellow-500" size={20} />;
-      case 'low':
-      case 'minimal':
-        return <CheckCircle className="text-green-500" size={20} />;
-      default:
-        return <Shield className="text-gray-500" size={20} />;
-    }
-  };
 
-  // Helper function to get the analysis data
-  const getActiveAnalysis = (result: CorruptionAnalysisResponse) => {
-    return result.lightrag_analysis;
-  };
 
   const tabs = [
     { id: 'overview', label: 'Overview', icon: BarChart3 },
-    { id: 'individual', label: 'Individual Analysis', icon: FileText },
     { id: 'batch', label: 'Batch Analysis', icon: Zap },
+    { id: 'word-analysis', label: 'Sensitive Word Detection', icon: MessageSquare },
   ];
 
   if (isLoading) {
@@ -343,15 +328,15 @@ export function CorruptionAnalysisPage() {
                 </Button>
 
                 <Button 
-                  onClick={() => setActiveTab('individual')} 
+                  onClick={() => setActiveTab('word-analysis')} 
                   className="h-20 text-left p-4"
                   variant="outline"
                 >
                   <div className="flex items-center space-x-3">
-                    <FileText className="text-primary" size={24} />
+                    <MessageSquare className="text-primary" size={24} />
                     <div>
-                      <div className="font-medium">Individual Analysis</div>
-                      <div className="text-sm text-gray-600">Analyze specific contracts</div>
+                      <div className="font-medium">Sensitive Word Detection</div>
+                      <div className="text-sm text-gray-600">Detect inappropriate and problematic language</div>
                     </div>
                   </div>
                 </Button>
@@ -360,7 +345,7 @@ export function CorruptionAnalysisPage() {
           </Card>
 
           {/* Recent Results */}
-          {(analysisResult || batchResult) && (
+          {batchResult && (
             <Card>
               <CardHeader>
                 <CardTitle>Recent Analysis Results</CardTitle>
@@ -369,218 +354,23 @@ export function CorruptionAnalysisPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                {analysisResult && (
-                  <div className="p-4 border rounded-md mb-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-medium">Individual Analysis</h4>
-                      <Badge variant={analysisResult.success ? 'success' : 'destructive'}>
-                        {analysisResult.analysis_type === 'lightrag_advanced' ? 'AI Analysis' : 'Rule Analysis'}
-                      </Badge>
-                    </div>
-                    <p className="text-sm text-gray-600">{analysisResult.message}</p>
+                <div className="p-4 border rounded-md">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-medium">Batch Analysis</h4>
+                    <Badge variant={batchResult.success ? 'success' : 'destructive'}>
+                      {batchResult.summary.total_contracts_analyzed} contracts analyzed
+                    </Badge>
                   </div>
-                )}
-
-                {batchResult && (
-                  <div className="p-4 border rounded-md">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-medium">Batch Analysis</h4>
-                      <Badge variant={batchResult.success ? 'success' : 'destructive'}>
-                        {batchResult.summary.total_contracts_analyzed} contracts analyzed
-                      </Badge>
-                    </div>
-                    <p className="text-sm text-gray-600">
-                      {batchResult.summary.high_risk_contracts} high-risk contracts found
-                    </p>
-                  </div>
-                )}
+                  <p className="text-sm text-gray-600">
+                    {batchResult.summary.high_risk_contracts} high-risk contracts found
+                  </p>
+                </div>
               </CardContent>
             </Card>
           )}
         </div>
       )}
 
-      {activeTab === 'individual' && (
-        <div className="space-y-6">
-          {/* Contract Selection */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Select Contract for Analysis</CardTitle>
-              <CardDescription>
-                Choose a specific contract to analyze for corruption risks
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {/* Search */}
-                <div className="relative">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
-                  <Input
-                    placeholder="Search contracts..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-10"
-                  />
-                </div>
-
-                {/* Contract Dropdown */}
-                <select
-                  value={selectedContract}
-                  onChange={(e) => setSelectedContract(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-primary focus:border-primary"
-                >
-                  <option value="">Select a contract</option>
-                  {filteredContracts.map((contract) => (
-                    <option key={contract.contract_id} value={contract.contract_id}>
-                      {contract.contract_title} - {formatCurrency(contract.contract_amount)}
-                    </option>
-                  ))}
-                </select>
-
-                {/* Analysis Button */}
-                <Button 
-                  onClick={() => handleIndividualAnalysis(selectedContract)}
-                  disabled={!selectedContract || isAnalyzing}
-                  className="w-full"
-                >
-                  {isAnalyzing ? (
-                    <>
-                      <LoadingSpinner size="sm" className="mr-2" />
-                      Analyzing...
-                    </>
-                  ) : (
-                    <>
-                      <Shield size={16} className="mr-2" />
-                      Analyze Contract
-                    </>
-                  )}
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Analysis Results */}
-          {analysisResult && (
-            <Card>
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <CardTitle>Analysis Results</CardTitle>
-                    <CardDescription>
-                      Corruption risk assessment for selected contract
-                    </CardDescription>
-                  </div>
-                  <Badge variant={analysisResult.success ? 'success' : 'destructive'}>
-                    {analysisResult.analysis_type === 'lightrag_advanced' ? 'AI Analysis' : 'Rule Analysis'}
-                  </Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                {analysisResult.success ? (
-                  <div className="space-y-6">
-                    {/* Analysis Source Indicator */}
-                    <div className="flex items-center justify-between p-3 rounded-md bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
-                      <div className="flex items-center space-x-3">
-                        <Bot className="text-blue-500" size={24} />
-                        <div>
-                          <h4 className="font-medium">
-                            LightRAG AI Analysis
-                          </h4>
-                          <p className="text-sm text-gray-600">
-                            Advanced AI-powered corruption detection with knowledge graph reasoning
-                          </p>
-                        </div>
-                      </div>
-                      <Badge variant="default">
-                        LightRAG AI
-                      </Badge>
-                    </div>
-
-                    {/* Risk Level */}
-                    {getActiveAnalysis(analysisResult) && (
-                      <div className="flex items-center space-x-4">
-                        {getRiskIcon(getActiveAnalysis(analysisResult)!.corruption_risk_level)}
-                        <div>
-                          <h3 className="text-lg font-semibold">
-                            Risk Level: {getActiveAnalysis(analysisResult)!.corruption_risk_level}
-                          </h3>
-                          <p className="text-sm text-gray-600">
-                            Risk Score: {getActiveAnalysis(analysisResult)!.risk_score}/100
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Risk Indicators */}
-                    {(getActiveAnalysis(analysisResult)?.corruption_indicators.length || 0) > 0 && (
-                      <div>
-                        <h4 className="font-medium mb-2">Risk Indicators</h4>
-                        <div className="space-y-2">
-                          {getActiveAnalysis(analysisResult)!.corruption_indicators.map((indicator, index) => (
-                            <div key={index} className="flex items-center space-x-2 p-2 bg-yellow-50 rounded-md">
-                              <AlertTriangle className="text-yellow-500" size={16} />
-                              <span className="text-sm">{indicator}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Red Flags */}
-                    {(getActiveAnalysis(analysisResult)?.red_flags.length || 0) > 0 && (
-                      <div>
-                        <h4 className="font-medium mb-2">Red Flags</h4>
-                        <div className="space-y-2">
-                          {getActiveAnalysis(analysisResult)!.red_flags.map((flag, index) => (
-                            <div key={index} className="flex items-center space-x-2 p-2 bg-red-50 rounded-md">
-                              <AlertTriangle className="text-red-500" size={16} />
-                              <span className="text-sm">{flag}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Recommendations */}
-                    {(getActiveAnalysis(analysisResult)?.recommendations.length || 0) > 0 && (
-                      <div>
-                        <h4 className="font-medium mb-2">Recommendations</h4>
-                        <div className="space-y-2">
-                          {getActiveAnalysis(analysisResult)!.recommendations.map((rec, index) => (
-                            <div key={index} className="flex items-center space-x-2 p-2 bg-blue-50 rounded-md">
-                              <CheckCircle className="text-blue-500" size={16} />
-                              <span className="text-sm">{rec}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Detailed Analysis */}
-                    {getActiveAnalysis(analysisResult)?.analysis_details && (
-                      <div>
-                        <h4 className="font-medium mb-2">Detailed Analysis</h4>
-                        <div className="p-4 bg-gray-50 rounded-md">
-                          <p className="text-sm whitespace-pre-wrap">
-                            {getActiveAnalysis(analysisResult)!.analysis_details}
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                  </div>
-                ) : (
-                  <div className="text-center py-8">
-                    <AlertTriangle className="mx-auto text-red-500 mb-4" size={48} />
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">Analysis Failed</h3>
-                    <p className="text-gray-600">{analysisResult.message}</p>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          )}
-        </div>
-      )}
 
       {activeTab === 'batch' && (
         <div className="space-y-6">
@@ -730,6 +520,202 @@ export function CorruptionAnalysisPage() {
                     <AlertTriangle className="mx-auto text-red-500 mb-4" size={48} />
                     <h3 className="text-lg font-medium text-gray-900 mb-2">Batch Analysis Failed</h3>
                     <p className="text-gray-600">{batchResult.message}</p>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          )}
+        </div>
+      )}
+
+      {activeTab === 'word-analysis' && (
+        <div className="space-y-6">
+          {/* Word Analysis Input */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Sensitive Word Detection</CardTitle>
+              <CardDescription>
+                Analyze contract content for sensitive words and potentially problematic language using AI
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {/* Contract Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Select Contract to Analyze
+                  </label>
+                  <select
+                    value={selectedContractId}
+                    onChange={(e) => setSelectedContractId(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-primary focus:border-primary"
+                  >
+                    <option value="">Choose a contract...</option>
+                    {contracts.map((contract) => (
+                      <option key={contract.contract_id} value={contract.contract_id}>
+                        {contract.contract_title} - {formatCurrency(contract.contract_amount)}
+                      </option>
+                    ))}
+                  </select>
+                  {selectedContractId && (
+                    <div className="mt-2 text-sm text-gray-600">
+                      Selected: {contracts.find(c => c.contract_id === selectedContractId)?.contract_title}
+                    </div>
+                  )}
+                </div>
+
+                {/* Analysis Button */}
+                <Button 
+                  onClick={handleWordAnalysis}
+                  disabled={!selectedContractId || isWordAnalyzing}
+                  className="w-full"
+                >
+                  {isWordAnalyzing ? (
+                    <>
+                      <LoadingSpinner size="sm" className="mr-2" />
+                      Analyzing Contract...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={16} className="mr-2" />
+                      Analyze Contract for Sensitive Words
+                    </>
+                  )}
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Word Analysis Results */}
+          {wordAnalysisResult && (
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Sensitive Word Detection Results</CardTitle>
+                    <CardDescription>
+                      AI-powered sensitive word analysis results
+                    </CardDescription>
+                  </div>
+                  <Badge variant={wordAnalysisResult.success ? 'success' : 'destructive'}>
+                    {wordAnalysisResult.analysis_type === 'lightrag_advanced' ? 'AI Detection' : 'Rule Detection'}
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                {wordAnalysisResult.success && wordAnalysisResult.word_analysis ? (
+                  <div className="space-y-6">
+                    {/* Analysis Source Indicator */}
+                    <div className="flex items-center justify-between p-3 rounded-md bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
+                      <div className="flex items-center space-x-3">
+                        <Bot className="text-blue-500" size={24} />
+                        <div>
+                          <h4 className="font-medium">
+                            LightRAG AI Sensitive Word Detection
+                          </h4>
+                          <p className="text-sm text-gray-600">
+                            Advanced AI-powered language analysis for sensitive content detection
+                          </p>
+                        </div>
+                      </div>
+                      <Badge variant="default">
+                        SENSITIVE DETECTION
+                      </Badge>
+                    </div>
+
+                    {/* Risk Level */}
+                    <div className="flex items-center space-x-4">
+                      <div className={`p-2 rounded-md ${getRiskLevelColor(wordAnalysisResult.word_analysis.corruption_risk_level)}`}>
+                        <Shield size={20} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold">
+                          Risk Level: {wordAnalysisResult.word_analysis.corruption_risk_level}
+                        </h3>
+                        <p className="text-sm text-gray-600">
+                          Risk Score: {wordAnalysisResult.word_analysis.risk_score}/100
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Key Findings */}
+                    {wordAnalysisResult.word_analysis.key_findings.length > 0 && (
+                      <div>
+                        <h4 className="font-medium mb-2">Key Findings</h4>
+                        <div className="space-y-2">
+                          {wordAnalysisResult.word_analysis.key_findings.map((finding, index) => (
+                            <div key={index} className="flex items-center space-x-2 p-2 bg-blue-50 rounded-md">
+                              <FileText className="text-blue-500" size={16} />
+                              <span className="text-sm">{finding}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Risk Indicators */}
+                    {wordAnalysisResult.word_analysis.risk_indicators.length > 0 && (
+                      <div>
+                        <h4 className="font-medium mb-2">Risk Indicators</h4>
+                        <div className="space-y-2">
+                          {wordAnalysisResult.word_analysis.risk_indicators.map((indicator, index) => (
+                            <div key={index} className="flex items-center space-x-2 p-2 bg-yellow-50 rounded-md">
+                              <AlertTriangle className="text-yellow-500" size={16} />
+                              <span className="text-sm">{indicator}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Red Flags */}
+                    {wordAnalysisResult.word_analysis.red_flags.length > 0 && (
+                      <div>
+                        <h4 className="font-medium mb-2">Red Flags</h4>
+                        <div className="space-y-2">
+                          {wordAnalysisResult.word_analysis.red_flags.map((flag, index) => (
+                            <div key={index} className="flex items-center space-x-2 p-2 bg-red-50 rounded-md">
+                              <AlertTriangle className="text-red-500" size={16} />
+                              <span className="text-sm">{flag}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Recommendations */}
+                    {wordAnalysisResult.word_analysis.recommendations.length > 0 && (
+                      <div>
+                        <h4 className="font-medium mb-2">Recommendations</h4>
+                        <div className="space-y-2">
+                          {wordAnalysisResult.word_analysis.recommendations.map((rec, index) => (
+                            <div key={index} className="flex items-center space-x-2 p-2 bg-green-50 rounded-md">
+                              <Shield className="text-green-500" size={16} />
+                              <span className="text-sm">{rec}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Detailed Analysis */}
+                    {wordAnalysisResult.word_analysis.analysis_details && (
+                      <div>
+                        <h4 className="font-medium mb-2">Detailed Analysis</h4>
+                        <div className="p-4 bg-gray-50 rounded-md">
+                          <p className="text-sm whitespace-pre-wrap">
+                            {wordAnalysisResult.word_analysis.analysis_details}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                  </div>
+                ) : (
+                  <div className="text-center py-8">
+                    <AlertTriangle className="mx-auto text-red-500 mb-4" size={48} />
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">Analysis Failed</h3>
+                    <p className="text-gray-600">{wordAnalysisResult.message}</p>
                   </div>
                 )}
               </CardContent>

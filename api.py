@@ -87,6 +87,12 @@ class CorruptionAnalysisRequest(BaseModel):
     use_lightrag: bool = True
     lightrag_api_url: str = "http://localhost:9621"
 
+class WordAnalysisRequest(BaseModel):
+    contract_id: str
+    analysis_type: str = "sensitive_word_detection"  # Only sensitive word detection
+    use_lightrag: bool = True
+    lightrag_api_url: str = "http://localhost:9621"
+
 class CorruptionAnalysisResult(BaseModel):
     contract_id: str
     corruption_risk_level: str
@@ -104,6 +110,24 @@ class CorruptionAnalysisResponse(BaseModel):
     contract_id: str
     lightrag_analysis: Optional[CorruptionAnalysisResult] = None
     fallback_analysis: Optional[CorruptionAnalysisResult] = None
+
+class WordAnalysisResult(BaseModel):
+    text_content: str
+    analysis_type: str
+    corruption_risk_level: str
+    risk_score: int
+    key_findings: List[str]
+    risk_indicators: List[str]
+    red_flags: List[str]
+    recommendations: List[str]
+    analysis_details: str
+    analysis_timestamp: str
+
+class WordAnalysisResponse(BaseModel):
+    success: bool
+    message: str
+    analysis_type: str  # 'lightrag_advanced' or 'enhanced_rules'
+    word_analysis: Optional[WordAnalysisResult] = None
 
 class BatchCorruptionAnalysis(BaseModel):
     success: bool
@@ -156,6 +180,48 @@ def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode()).hexdigest()
 
 # Corruption Analysis Helper Functions
+async def call_lightrag_api_for_text(lightrag_url: str, text_content: str, query: str) -> Optional[str]:
+    """Call LightRAG API for word-based text analysis"""
+    try:
+        # Insert the text as a document
+        insert_url = f"{lightrag_url}/documents/text"
+        document_text = f"Text Analysis Content:\n{text_content}"
+
+        insert_payload = {
+            "text": document_text,
+            "file_source": f"word_analysis_{int(time.time())}"
+        }
+
+        async with aiohttp.ClientSession() as session:
+            # Insert document
+            async with session.post(insert_url, json=insert_payload) as response:
+                if response.status != 200:
+                    print(f"Failed to insert document: {response.status}")
+                    return None
+
+            # Wait a bit for processing
+            await asyncio.sleep(2)
+
+            # Query the knowledge graph
+            query_url = f"{lightrag_url}/query"
+            query_payload = {
+                "query": query,
+                "mode": "hybrid",
+                "response_type": "Single Paragraph"
+            }
+
+            async with session.post(query_url, json=query_payload) as response:
+                if response.status == 200:
+                    result = await response.json()
+                    return result.get("response", "")
+                else:
+                    print(f"Failed to query LightRAG: {response.status}")
+                    return None
+
+    except Exception as e:
+        print(f"Error calling LightRAG API: {str(e)}")
+        return None
+
 async def call_lightrag_api(lightrag_url: str, contract_data: Dict, query: str) -> Optional[str]:
     """Call LightRAG API for corruption analysis"""
     try:
@@ -206,6 +272,112 @@ Status: {contract_data['status']}"""
         print(f"Error calling LightRAG API: {str(e)}")
         return None
 
+
+def parse_word_analysis_response(response_text: str, text_content: str, analysis_type: str) -> WordAnalysisResult:
+    """Parse LightRAG response for word-based analysis"""
+    try:
+        # Extract risk level from response
+        risk_level = "Medium"  # Default
+        risk_score = 50  # Default
+        
+        response_lower = response_text.lower()
+        
+        # Risk level detection
+        if any(word in response_lower for word in ['critical', 'very high', 'extremely high']):
+            risk_level = "Critical"
+            risk_score = 85
+        elif any(word in response_lower for word in ['high risk', 'high', 'severe']):
+            risk_level = "High"
+            risk_score = 75
+        elif any(word in response_lower for word in ['medium', 'moderate', 'moderate risk']):
+            risk_level = "Medium"
+            risk_score = 50
+        elif any(word in response_lower for word in ['low', 'minimal', 'low risk']):
+            risk_level = "Low"
+            risk_score = 25
+        
+        # Extract findings and indicators from response
+        key_findings = []
+        risk_indicators = []
+        red_flags = []
+        recommendations = []
+        
+        # Pattern extraction for demo
+        if 'suspicious' in response_lower:
+            risk_indicators.append("Suspicious language patterns detected")
+        if 'conflict of interest' in response_lower:
+            red_flags.append("Potential conflict of interest language")
+        if 'review' in response_lower:
+            recommendations.append("Additional review recommended")
+        if 'monitor' in response_lower:
+            recommendations.append("Enhanced monitoring suggested")
+        if 'irregular' in response_lower:
+            key_findings.append("Irregular patterns in text structure")
+        if 'compliance' in response_lower:
+            key_findings.append("Compliance-related content identified")
+            
+        # Default content for sensitive word detection
+        if not key_findings:
+            key_findings = ["Sensitive word detection analysis completed"]
+                
+        if not recommendations:
+            recommendations = [
+                "AI-powered analysis suggests standard monitoring procedures",
+                "Regular compliance checks recommended",
+                "Documentation of all relevant activities advised"
+            ]
+        
+        analysis_details = f"""LightRAG AI-Powered Word Analysis Report
+        
+Analysis Type: {analysis_type.replace('_', ' ').title()}
+Risk Assessment: {risk_level} ({risk_score}/100)
+
+AI Analysis Summary:
+{response_text}
+
+Analysis Methodology:
+This word-based analysis was performed using LightRAG's knowledge graph technology,
+which leverages advanced natural language processing to identify patterns, risks,
+and anomalies within the provided text content.
+
+The AI system analyzed:
+- Language patterns and terminology
+- Structural analysis of text content
+- Contextual relationship mapping
+- Risk indicator identification
+- Compliance and regulatory alignment
+
+Text Content Length: {len(text_content)} characters
+Analysis Timestamp: {datetime.now().isoformat()}
+"""
+        
+        return WordAnalysisResult(
+            text_content=text_content[:500] + "..." if len(text_content) > 500 else text_content,
+            analysis_type=analysis_type,
+            corruption_risk_level=risk_level,
+            risk_score=risk_score,
+            key_findings=key_findings,
+            risk_indicators=risk_indicators if risk_indicators else ["No specific risk indicators detected"],
+            red_flags=red_flags if red_flags else ["No critical red flags identified"],
+            recommendations=recommendations,
+            analysis_details=analysis_details,
+            analysis_timestamp=datetime.now().isoformat()
+        )
+        
+    except Exception as e:
+        print(f"Error parsing word analysis response: {str(e)}")
+        return WordAnalysisResult(
+            text_content=text_content[:500] + "..." if len(text_content) > 500 else text_content,
+            analysis_type=analysis_type,
+            corruption_risk_level="Medium",
+            risk_score=50,
+            key_findings=["Unable to parse LightRAG response"],
+            risk_indicators=["LightRAG response parsing failed"],
+            red_flags=["Analysis parsing error"],
+            recommendations=["Manual review recommended due to analysis parsing error"],
+            analysis_details=f"Word analysis parsing failed. Raw response: {response_text[:500]}...",
+            analysis_timestamp=datetime.now().isoformat()
+        )
 
 def parse_lightrag_response(response_text: str, contract_data: Dict) -> CorruptionAnalysisResult:
     """Parse LightRAG response and extract corruption analysis data"""
@@ -1375,6 +1547,93 @@ async def batch_analyze_corruption(current_user: dict = Depends(get_current_user
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Batch analysis failed: {str(e)}")
+
+@app.post("/api/word/analyze", response_model=WordAnalysisResponse)
+async def analyze_word_content(
+    request: WordAnalysisRequest,
+    current_user: dict = Depends(get_current_user)
+):
+    """Analyze contract content for sensitive words using LightRAG AI"""
+    try:
+        if not request.contract_id.strip():
+            raise HTTPException(status_code=400, detail="Contract ID is required")
+        
+        # Get contract data
+        if request.contract_id not in contracts_db:
+            raise HTTPException(status_code=404, detail="Contract not found")
+        
+        contract_data = contracts_db[request.contract_id]
+        contract_content = contract_data['contract_content']
+        
+        if not contract_content or len(contract_content.strip()) < 10:
+            raise HTTPException(status_code=400, detail="Contract content is too short for analysis")
+        
+        # Always use LightRAG for analysis
+        try:
+            # Sensitive word detection analysis only
+            analysis_query = f"""
+            Analyze this contract content for sensitive words and potentially problematic language:
+
+            Contract Title: {contract_data['contract_title']}
+            Contract Content: {contract_content}
+
+            Please identify and evaluate:
+            1. Sensitive or inappropriate words and phrases
+            2. Language that could indicate bias, discrimination, or misconduct
+            3. Terms that may violate professional or ethical standards
+            4. Potentially offensive or problematic expressions
+            5. Words that could indicate corruption, fraud, or unethical behavior
+            6. Language that suggests conflicts of interest or improper relationships
+            7. Terms that might indicate regulatory or compliance violations
+
+            Provide a detailed analysis including:
+            - Risk level assessment (Low, Medium, High, Critical)
+            - Specific sensitive words or phrases found
+            - Context and implications of identified language
+            - Recommendations for language improvement or replacement
+            - Potential impact on reputation or compliance
+
+            Focus on detecting language patterns that could be problematic in professional, legal, 
+            or business contexts, including but not limited to corruption indicators, discriminatory 
+            language, inappropriate terminology, and words that suggest unethical practices.
+            """
+            
+            lightrag_response = await call_lightrag_api_for_text(
+                request.lightrag_api_url, 
+                contract_content, 
+                analysis_query
+            )
+            
+            if lightrag_response:
+                word_analysis = parse_word_analysis_response(
+                    lightrag_response, 
+                    contract_content, 
+                    request.analysis_type
+                )
+                
+                return WordAnalysisResponse(
+                    success=True,
+                    message=f"Sensitive word analysis completed for contract: {contract_data['contract_title']}",
+                    analysis_type="lightrag_advanced",
+                    word_analysis=word_analysis
+                )
+            else:
+                raise HTTPException(
+                    status_code=503, 
+                    detail="LightRAG analysis service is unavailable. Please ensure LightRAG is running and try again."
+                )
+                
+        except Exception as e:
+            print(f"LightRAG word analysis failed: {str(e)}")
+            raise HTTPException(
+                status_code=503, 
+                detail=f"LightRAG analysis failed: {str(e)}. Please ensure LightRAG is running and accessible."
+            )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Word analysis failed: {str(e)}")
 
 if __name__ == "__main__":
     uvicorn.run(

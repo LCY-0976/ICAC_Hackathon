@@ -34,10 +34,14 @@ print(f"   Working Dir: {os.environ['WORKING_DIR']}")
 # Import and start the server
 try:
     from lightrag.api.lightrag_server import create_app
+    from lightrag.api.config import parse_args
     import uvicorn
     
+    # Parse arguments with environment variables
+    args = parse_args()
+    
     # Create the app with our configuration
-    app = create_app()
+    app = create_app(args)
     
     # Run the server
     uvicorn.run(

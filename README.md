@@ -67,7 +67,7 @@ cd "ICAC Hackathon"
 ### 2. Install Backend Dependencies
 ```bash
 pip install -r requirements.txt
-pip install pybind11
+pip install pybind11--target./
 ```
 
 ### 3. Build C++ Module

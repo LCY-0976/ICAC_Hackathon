@@ -1,0 +1,215 @@
+{
+  "doc-4bcbb40e2375fd701265b77803596718": {
+    "status": "processed",
+    "chunks_count": 10,
+    "chunks_list": [
+      "chunk-25a66d5a2303fe7498b91a10735ad32b",
+      "chunk-e217c294eef81b650d0336bdfccd6f3b",
+      "chunk-3f514fc42668cf5862bed80898834048",
+      "chunk-91acb317caba3c0ce55f4e36d40b287a",
+      "chunk-b43b5117a644732f629aac3ba9e626fe",
+      "chunk-55a87516a184ba071100cd959a2784a2",
+      "chunk-330b5b3024c3d915a93c52312e6eb37b",
+      "chunk-64b1aedade1852c2ff032d3a6e900995",
+      "chunk-3db726e189808c3ec70648d09201b168",
+      "chunk-e3de1b6ad40a113f1b94da2e7f9672e3"
+    ],
+    "content_summary": "Contracting out Cleaning and \nSecurity Contracts \n \n \n \n \n \n \n \n \n \n \n  \n \n  INTRODUCTIONINTRODUCTION \nOrganizations and companies often find it more cost effective to a ppoint contractors to \nprovide cleaning and security services. Wh ile there are ...",
+    "content_length": 51215,
+    "created_at": "2025-09-08T12:15:12.420324+00:00",
+    "updated_at": "2025-09-08T13:19:49.310144+00:00",
+    "file_path": "3fc968ac-540d-456d-808c-585b077063f3.pdf",
+    "track_id": "upload_20250908_201512_6cdb1b80",
+    "metadata": {
+      "processing_start_time": 1757337377,
+      "processing_end_time": 1757337589
+    }
+  },
+  "doc-45083b762ef788ababb088a5498632c9": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-45083b762ef788ababb088a5498632c9"
+    ],
+    "content_summary": "Contract Title: Software Development Agreement\nContract ID: CONT_000001\nContract Amount: $75,000.00\nContract Type: cross-company\nUploader Company: ABC Company\nOther Company: XYZ Corporation\nContract Content: This agreement outlines the terms for soft...",
+    "content_length": 647,
+    "created_at": "2025-09-08T15:23:05.811373+00:00",
+    "updated_at": "2025-09-08T15:24:03.310996+00:00",
+    "file_path": "contract_CONT_000001",
+    "track_id": "insert_20250908_232305_f4524a7d",
+    "metadata": {
+      "processing_start_time": 1757344985,
+      "processing_end_time": 1757345043
+    }
+  },
+  "doc-49c11da52d38c0512fb8169340db16f3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-49c11da52d38c0512fb8169340db16f3"
+    ],
+    "content_summary": "This is a test document",
+    "content_length": 23,
+    "created_at": "2025-09-10T05:40:04.028162+00:00",
+    "updated_at": "2025-09-10T05:40:12.496949+00:00",
+    "file_path": "test_source",
+    "track_id": "insert_20250910_134004_a95aece8",
+    "metadata": {
+      "processing_start_time": 1757482804,
+      "processing_end_time": 1757482812
+    }
+  },
+  "doc-572aa59ab24d17397a6cf5d3b53041ae": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-572aa59ab24d17397a6cf5d3b53041ae"
+    ],
+    "content_summary": "Test contract analysis content",
+    "content_length": 30,
+    "created_at": "2025-09-10T05:43:02.501157+00:00",
+    "updated_at": "2025-09-10T05:43:15.298384+00:00",
+    "file_path": "word_analysis_test",
+    "track_id": "insert_20250910_134302_e791828e",
+    "metadata": {
+      "processing_start_time": 1757482982,
+      "processing_end_time": 1757482995
+    }
+  },
+  "doc-79cc91933ce4dfcf4cf7f40b60b0decb": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-79cc91933ce4dfcf4cf7f40b60b0decb"
+    ],
+    "content_summary": "Text Analysis Content:\ncheck whether there is suspicious words",
+    "content_length": 62,
+    "created_at": "2025-09-10T05:45:19.200880+00:00",
+    "updated_at": "2025-09-10T05:45:32.849814+00:00",
+    "file_path": "word_analysis_1757483119",
+    "track_id": "insert_20250910_134519_c3920862",
+    "metadata": {
+      "processing_start_time": 1757483119,
+      "processing_end_time": 1757483132
+    }
+  },
+  "doc-8516e17c74d7b35e0c49e0d63188a341": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8516e17c74d7b35e0c49e0d63188a341"
+    ],
+    "content_summary": "Test document",
+    "content_length": 13,
+    "created_at": "2025-09-11T02:46:59.517338+00:00",
+    "updated_at": "2025-09-11T02:47:10.427251+00:00",
+    "file_path": "test",
+    "track_id": "insert_20250911_104659_819c565b",
+    "metadata": {
+      "processing_start_time": 1757558819,
+      "processing_end_time": 1757558830
+    }
+  },
+  "doc-f1cdacfbad385a8fc723c83e0e824e8d": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f1cdacfbad385a8fc723c83e0e824e8d"
+    ],
+    "content_summary": "Contract Analysis Content:\nThis agreement outlines the terms for software development services between ABC Company and XYZ Corporation. The project involves creating a custom web application with the following specifications: 1) User authentication s...",
+    "content_length": 411,
+    "created_at": "2025-09-11T02:48:58.053378+00:00",
+    "updated_at": "2025-09-11T02:49:43.304090+00:00",
+    "file_path": "test_contract_analysis",
+    "track_id": "insert_20250911_104858_8aa12d65",
+    "metadata": {
+      "processing_start_time": 1757558938,
+      "processing_end_time": 1757558983
+    }
+  },
+  "doc-b7d61913805b4ce2aae6dba632f085f3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b7d61913805b4ce2aae6dba632f085f3"
+    ],
+    "content_summary": "test document",
+    "content_length": 13,
+    "created_at": "2025-09-11T02:51:19.833395+00:00",
+    "updated_at": "2025-09-11T02:51:29.194775+00:00",
+    "file_path": "test",
+    "track_id": "insert_20250911_105119_323e14ef",
+    "metadata": {
+      "processing_start_time": 1757559079,
+      "processing_end_time": 1757559089
+    }
+  },
+  "doc-24680041a8c2909e3937490f6b37969e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-24680041a8c2909e3937490f6b37969e"
+    ],
+    "content_summary": "Contract Title: Software Development Agreement\nContract ID: CONT_000001\nContract Amount: $75,000.00\nContract Type: cross-company\nUploader Company: ABC Company\nOther Company: XYZ Corporation\nContract Content: This agreement outlines the terms for soft...",
+    "content_length": 647,
+    "created_at": "2025-09-11T02:53:04.848913+00:00",
+    "updated_at": "2025-09-11T02:53:55.080905+00:00",
+    "file_path": "contract_CONT_000001",
+    "track_id": "insert_20250911_105304_9ad9522a",
+    "metadata": {
+      "processing_start_time": 1757559184,
+      "processing_end_time": 1757559235
+    }
+  },
+  "doc-40f6ec754a2ad62bef04c518d5333995": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-40f6ec754a2ad62bef04c518d5333995"
+    ],
+    "content_summary": "Contract Title: Test Contract\nContract ID: CONT_000001\nContract Amount: $50,000.00\nContract Content: This is a test contract for software development services.",
+    "content_length": 159,
+    "created_at": "2025-09-11T02:54:12.157644+00:00",
+    "updated_at": "2025-09-11T02:54:46.185198+00:00",
+    "file_path": "contract_CONT_000001",
+    "track_id": "insert_20250911_105412_b8465af7",
+    "metadata": {
+      "processing_start_time": 1757559252,
+      "processing_end_time": 1757559286
+    }
+  },
+  "doc-fee2a658c6f3a044db68cc3512210045": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fee2a658c6f3a044db68cc3512210045"
+    ],
+    "content_summary": "Test document for API connectivity check",
+    "content_length": 40,
+    "created_at": "2025-09-11T03:00:51.755707+00:00",
+    "updated_at": "2025-09-11T03:01:08.763954+00:00",
+    "file_path": "api_test",
+    "track_id": "insert_20250911_110051_054306ff",
+    "metadata": {
+      "processing_start_time": 1757559651,
+      "processing_end_time": 1757559668
+    }
+  },
+  "doc-c25484da32943ee61904690db2580c4f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c25484da32943ee61904690db2580c4f"
+    ],
+    "content_summary": "Text Analysis Content:\nThis agreement outlines the terms for software development services between ABC Company and XYZ Corporation. The project involves creating a custom web application with the following specifications: 1) User authentication syste...",
+    "content_length": 407,
+    "created_at": "2025-09-11T03:03:27.817904+00:00",
+    "updated_at": "2025-09-11T03:04:05.774768+00:00",
+    "file_path": "word_analysis_1757559807",
+    "track_id": "insert_20250911_110327_d20d5efa",
+    "metadata": {
+      "processing_start_time": 1757559807,
+      "processing_end_time": 1757559845
+    }
+  }
+}

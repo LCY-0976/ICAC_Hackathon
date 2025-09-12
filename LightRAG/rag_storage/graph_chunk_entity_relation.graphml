@@ -1,0 +1,2462 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d11" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d10" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d9" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d8" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d7" for="edge" attr.name="description" attr.type="string"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Procurement Staff">
+  <data key="d0">Procurement Staff</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Procurement Staff are responsible for executing procurement procedures including contractor listing, shortlisting, and bid management.&lt;SEP&gt;Procurement staff are responsible for preparing tender documents, sourcing contractors, and managing various procurement processes.&lt;SEP&gt;Procurement Staff are responsible for checking compliance, evaluating quotations, and managing the procurement process, including documentation and contractor selection.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Approved List of Contractors">
+  <data key="d0">Approved List of Contractors</data>
+  <data key="d1">Document</data>
+  <data key="d2">A maintained list of pre-qualified contractors that meet specific criteria for providing cleaning and security services.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Contractors">
+  <data key="d0">Contractors</data>
+  <data key="d1">Organization</data>
+  <data key="d2">External service providers for cleaning and security services that undergo evaluation and selection processes.&lt;SEP&gt;Contractors are service providers who submit quotations and tenders, and are subject to contract terms including performance monitoring and probity clauses.&lt;SEP&gt;Service providers hired by organizations to perform cleaning and security services.&lt;SEP&gt;Contractors are service providers engaged under the contract, required to adhere to specified terms, provide staff lists, duty rosters, and performance records.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-b43b5117a644732f629aac3ba9e626fe&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Designated Authority">
+  <data key="d0">Designated Authority</data>
+  <data key="d1">Organization</data>
+  <data key="d2">A panel or senior staff member responsible for approving contractor shortlists and procurement decisions.&lt;SEP&gt;An authority with the power to approve exceptions, such as accepting late tender submissions under justifiable circumstances.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Quotation Invitation">
+  <data key="d0">Quotation Invitation</data>
+  <data key="d1">Document</data>
+  <data key="d2">A formal document used to invite contractors to submit price quotes for services, with sample provided in Appendix 2.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Tender Invitation">
+  <data key="d0">Tender Invitation</data>
+  <data key="d1">Document</data>
+  <data key="d2">A formal document used to invite contractors to submit detailed service proposals, with sample provided in Appendix 3.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Tender Box">
+  <data key="d0">Tender Box</data>
+  <data key="d1">Equipment</data>
+  <data key="d2">A secure double-locked container used for receiving physical tender submissions to ensure integrity.&lt;SEP&gt;The physical location where tender documents must be submitted, marked with confidential labeling requirements.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Two-Envelope Approach">
+  <data key="d0">Two-Envelope Approach</data>
+  <data key="d1">Technology</data>
+  <data key="d2">A bidding method where service and price proposals are submitted separately to ensure objective assessment.&lt;SEP&gt;A tender evaluation method where price offers and service proposals are submitted and assessed separately to ensure objective evaluation.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337581</data>
+</node>
+<node id="Quotation/Tender Opening Record">
+  <data key="d0">Quotation/Tender Opening Record</data>
+  <data key="d1">Document</data>
+  <data key="d2">A documented record of all bids received and opened, maintained for audit purposes with sample in Appendix 4.&lt;SEP&gt;A document used to record the receipt and opening of quotations and tenders, serving as an audit trail for the procurement process.&lt;SEP&gt;Sample form used for recording the receipt and opening of quotations or tenders.&lt;SEP&gt;A document that records the details of tender openings, including bidder names and their respective prices, witnessed by authorized personnel.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Cleaning and Security Services">
+  <data key="d0">Cleaning and Security Services</data>
+  <data key="d1">Category</data>
+  <data key="d2">Specific types of services being procured through the outlined contracting processes.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Listing Criteria">
+  <data key="d0">Listing Criteria</data>
+  <data key="d1">Document</data>
+  <data key="d2">Pre-determined standards and procedures for including or removing contractors from the approved list.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Electronic Tendering System">
+  <data key="d0">Electronic Tendering System</data>
+  <data key="d1">Technology</data>
+  <data key="d2">A digital platform used for submitting and managing tender documents.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Site Visit">
+  <data key="d0">Site Visit</data>
+  <data key="d1">Event</data>
+  <data key="d2">A potential event arranged for tenderers to visit the service location for better proposal preparation.&lt;SEP&gt;An optional event where tenderers can visit the service location by contacting the designated personnel.</data>
+  <data key="d3">chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Management">
+  <data key="d0">Management</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Management establishes procedures with safeguards to prevent tampering of quotations or tenders.&lt;SEP&gt;Management specifies procurement methods, approves tender documents, appoints assessment panels, and supervises procurement processes.&lt;SEP&gt;Management appoints evaluation panels, sets guidelines for post-tender negotiation, and oversees the procurement process to ensure fairness and compliance.&lt;SEP&gt;Management oversees procurement and service quality monitoring processes, arranges audits, initiates investigations, and ensures compliance with policies.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-b43b5117a644732f629aac3ba9e626fe&lt;SEP&gt;chunk-3f514fc42668cf5862bed80898834048&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Company/Organization">
+  <data key="d0">Company/Organization</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Company/Organization is the entity issuing the tender and will be the recipient of the tender submissions and confirmation letters.&lt;SEP&gt;The Company/Organization is the entity requesting services, managing the quotation process, and making purchasing decisions.&lt;SEP&gt;The Company/Organization is the entity issuing the tender invitation and seeking service providers, with specific requirements and submission procedures.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2&lt;SEP&gt;chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Tenderer">
+  <data key="d0">Tenderer</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Tenderer is the entity submitting a bid for the contract and is bound by the rules against collusion in the tendering process.&lt;SEP&gt;The Tenderer is a potential service provider submitting a bid in response to the tender invitation, required to meet eligibility requirements and submit supporting documents.&lt;SEP&gt;Tenderer refers to companies or organizations submitting bids for the contract being tendered.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3&lt;SEP&gt;chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Confirmation Letter">
+  <data key="d0">Confirmation Letter</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Confirmation Letter is a required document that the tenderer must submit, affirming compliance with anti-collusion rules.&lt;SEP&gt;The Confirmation Letter is a required document that must be submitted along with the Form of Tender and supporting documents.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Form of Tender">
+  <data key="d0">Form of Tender</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Form of Tender is the official document where the tenderer details their offer, including company background, services, and pricing.&lt;SEP&gt;The Form of Tender is a required document that must be completed and signed by the tenderer as part of the submission package.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Tender Invitation Letter">
+  <data key="d0">Tender Invitation Letter</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Tender Invitation Letter outlines the terms and conditions for the tender process and is referenced by the tenderer in their submission.&lt;SEP&gt;Sample letter used for inviting tenders from potential contractors.&lt;SEP&gt;The Tender Invitation Letter is the document that formally requests tenders and includes annexes such as anti-bribery clauses.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Contract">
+  <data key="d0">Contract</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Contract is the agreement for which the tender is being submitted, specifically for the provision of services.&lt;SEP&gt;The Contract is the formal agreement for the provision of services that is the subject of the tender process.&lt;SEP&gt;The contract is a formal agreement specifying terms and conditions for service provision, including clauses on probity, subcontracting, insurance, and payment claims.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe&lt;SEP&gt;chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Anti-Collusion Clause">
+  <data key="d0">Anti-Collusion Clause</data>
+  <data key="d1">Category</data>
+  <data key="d2">The Anti-Collusion Clause is a rule prohibiting tenderers from communicating or making arrangements with others about their tender.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Excepted Communications">
+  <data key="d0">Excepted Communications</data>
+  <data key="d1">Category</data>
+  <data key="d2">Excepted Communications are confidential discussions allowed with insurers, brokers, consultants, or sub-contractors for tender preparation.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Employer">
+  <data key="d0">Employer</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Employer is the entity, synonymous with the Company/Organization, that is issuing the tender and will be the recipient of the services.&lt;SEP&gt;The Employer is the entity issuing the tender invitation and is not obligated to accept the lowest or any tender received.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Services">
+  <data key="d0">Services</data>
+  <data key="d1">Category</data>
+  <data key="d2">The Services are the specific provisions detailed in the Form of Tender that the successful tenderer will supply to the Employer.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Hong Kong Dollars">
+  <data key="d0">Hong Kong Dollars</data>
+  <data key="d1">Category</data>
+  <data key="d2">Hong Kong Dollars is the specified currency in which the tender sum must be offered for the contract.</data>
+  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Prevention of Bribery Ordinance">
+  <data key="d0">Prevention of Bribery Ordinance</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Prevention of Bribery Ordinance is a legal document that prohibits offering advantages to staff members in connection with quotations or service provision.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Quotation Form">
+  <data key="d0">Quotation Form</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Quotation Form is a document that contractors must fill out and submit, containing company information, service details, and pricing.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Invitation Document">
+  <data key="d0">Invitation Document</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Invitation Document contains Terms of Quotation and serves as the basis for contractors to submit their quotations.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Tender Opening Record">
+  <data key="d0">Tender Opening Record</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Tender Opening Record is referenced in Appendix 4 and contains details of quotations/tenders received.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Sample Form for Invitation of Quotation">
+  <data key="d0">Sample Form for Invitation of Quotation</data>
+  <data key="d1">Document</data>
+  <data key="d2">This is a sample document template used to formally request quotations from contractors for services.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Sample Letter for Invitation of Tender">
+  <data key="d0">Sample Letter for Invitation of Tender</data>
+  <data key="d1">Document</data>
+  <data key="d2">This is a sample letter template used to formally invite contractors to submit tenders for services.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Contractor">
+  <data key="d0">Contractor</data>
+  <data key="d1">Organization</data>
+  <data key="d2">A contractor is an external service provider invited to submit quotations or tenders for providing services.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Quotation Exercise">
+  <data key="d0">Quotation Exercise</data>
+  <data key="d1">Category</data>
+  <data key="d2">The quotation exercise refers to the formal process of inviting, receiving, and evaluating quotations from contractors.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Appendix 4">
+  <data key="d0">Appendix 4</data>
+  <data key="d1">Document</data>
+  <data key="d2">Appendix 4 contains the Quotation/Tender Opening Record which details all quotations and tenders received.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Terms of Quotation">
+  <data key="d0">Terms of Quotation</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Terms of Quotation are the rules and conditions that contractors must follow when submitting their quotations.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Sealed Envelope">
+  <data key="d0">Sealed Envelope</data>
+  <data key="d1">Equipment</data>
+  <data key="d2">A sealed envelope is required for submitting quotations, marked with the quotation reference for proper handling.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Fax Transmission">
+  <data key="d0">Fax Transmission</data>
+  <data key="d1">Technology</data>
+  <data key="d2">Fax transmission is an accepted method for submitting quotations to the specified fax number.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Quotation Reference Number">
+  <data key="d0">Quotation Reference Number</data>
+  <data key="d1">Category</data>
+  <data key="d2">The quotation reference number is a unique identifier used to track and manage quotation submissions.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Quotation Closing Date">
+  <data key="d0">Quotation Closing Date</data>
+  <data key="d1">Category</data>
+  <data key="d2">The quotation closing date is the deadline by which all quotations must be submitted to be considered.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Unit Price">
+  <data key="d0">Unit Price</data>
+  <data key="d1">Category</data>
+  <data key="d2">Unit price refers to the cost per unit of service or item being quoted by the contractor.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337582</data>
+</node>
+<node id="Total Price">
+  <data key="d0">Total Price</data>
+  <data key="d1">Category</data>
+  <data key="d2">Total price is the overall cost calculated for the services being offered by the contractor.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Payment Terms">
+  <data key="d0">Payment Terms</data>
+  <data key="d1">Category</data>
+  <data key="d2">Payment terms specify the conditions under which the contractor will receive payment for services rendered.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Warranty of Service">
+  <data key="d0">Warranty of Service</data>
+  <data key="d1">Category</data>
+  <data key="d2">Warranty of service refers to the guarantees and assurances provided by the contractor regarding service quality.</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Open Tendering">
+  <data key="d0">Open Tendering</data>
+  <data key="d1">Category</data>
+  <data key="d2">Open tendering is a procurement method for services above a specified value, involving open invitation of tenders from contractors through public channels like websites or newspaper advertisements.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Restrictive Tendering">
+  <data key="d0">Restrictive Tendering</data>
+  <data key="d1">Category</data>
+  <data key="d2">Restrictive tendering is a procurement method for services below a specified amount, involving invitation of a specified number of contractors from an approved list or the market.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Two-Envelope System">
+  <data key="d0">Two-Envelope System</data>
+  <data key="d1">Category</data>
+  <data key="d2">The two-envelope system is a procurement approach where contractors submit service and price proposals in separately sealed envelopes for assessment, used for high-value purchases where price is not the only consideration.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Conflict of Interest Declaration">
+  <data key="d0">Conflict of Interest Declaration</data>
+  <data key="d1">Category</data>
+  <data key="d2">Conflict of interest declaration requires staff involved in procurement to declare any perceived or actual conflicts, such as financial interests in tenderer businesses.&lt;SEP&gt;A process requiring individuals involved in procurement to declare any potential conflicts of interest.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Purchase Requisition Form">
+  <data key="d0">Purchase Requisition Form</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Purchase Requisition Form is used to identify the need for cleaning or security services and draw up the required scope of service.&lt;SEP&gt;A form used to recommend a selected contractor, requiring endorsement from the approving authority and attachment of all received quotations.&lt;SEP&gt;Sample form used for making purchase requests for cleaning and security services.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Approving Authority">
+  <data key="d0">Approving Authority</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The approving authority endorses purchase requests, ascertains service needs, checks budgets, and approves procurement activities at appropriate levels.&lt;SEP&gt;The Approving Authority endorses procurement recommendations, evaluates final offers, and ensures compliance with selection criteria before contract award.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Approved Contractors List">
+  <data key="d0">Approved Contractors List</data>
+  <data key="d1">Document</data>
+  <data key="d2">The approved contractors list contains contractors approved by management for frequent cleaning and security service contracting exercises.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="User">
+  <data key="d0">User</data>
+  <data key="d1">Organization</data>
+  <data key="d2">User identifies the need for cleaning or security services, draws up scope of service requirements, and submits purchase requisitions.&lt;SEP&gt;The User is involved in the procurement process, helping to check compliance with requirements and participating in the evaluation of tenders.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Cleaning Contracts">
+  <data key="d0">Cleaning Contracts</data>
+  <data key="d1">Category</data>
+  <data key="d2">Cleaning contracts specify service requirements such as coverage, frequency of cleaning, number of workers, supervision plans, and response time for urgent tasks.&lt;SEP&gt;Service contracts for cleaning services that organizations outsource to contractors.&lt;SEP&gt;Cleaning Contracts are service agreements specifying cleaning schedules, worker headcounts, and standards of cleanliness, with performance monitored through surprise checks.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-b43b5117a644732f629aac3ba9e626fe&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Security Contracts">
+  <data key="d0">Security Contracts</data>
+  <data key="d1">Category</data>
+  <data key="d2">Security contracts specify requirements including 24-hour coverage, guard posts, patrol frequency, security personnel numbers, equipment needs, and response times.&lt;SEP&gt;Service contracts for security services that organizations outsource to contractors.&lt;SEP&gt;Security Contracts are service agreements requiring specified guard posts, patrol frequencies, and security guard headcounts, monitored through electronic systems and surprise checks.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-b43b5117a644732f629aac3ba9e626fe&lt;SEP&gt;chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender/Quotation Document">
+  <data key="d0">Tender/Quotation Document</data>
+  <data key="d1">Document</data>
+  <data key="d2">Tender/quotation documents contain service specifications, background requirements, contract terms, payment methods, and selection criteria for bidders.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Duty Segregation">
+  <data key="d0">Duty Segregation</data>
+  <data key="d1">Category</data>
+  <data key="d2">Duty segregation involves assigning different staff members to handle sourcing contractors, preparing service contracts, and monitoring service deliverables.</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Quotations">
+  <data key="d0">Quotations</data>
+  <data key="d1">Document</data>
+  <data key="d2">Quotations are offers received from potential contractors during procurement, which must be properly recorded and evaluated for compliance and best price.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tenders">
+  <data key="d0">Tenders</data>
+  <data key="d1">Document</data>
+  <data key="d2">Tenders are formal bids submitted by contractors, evaluated by a panel based on pre-determined criteria including price and quality of service.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender Evaluation Panel">
+  <data key="d0">Tender Evaluation Panel</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Tender Evaluation Panel is a group appointed to assess tenders based on pre-determined criteria, ensuring objectivity and fairness in the selection process.&lt;SEP&gt;The Tender Evaluation Panel is a group responsible for assessing and scoring submitted tenders based on predefined criteria.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Negotiation Team">
+  <data key="d0">Negotiation Team</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Negotiation Team conducts post-tender negotiations within defined parameters, documents proceedings, and seeks management instruction as needed.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Post-Tender Negotiation">
+  <data key="d0">Post-Tender Negotiation</data>
+  <data key="d1">Event</data>
+  <data key="d2">Post-Tender Negotiation is a process conducted with selected tenderers to refine offers, guided by management-set parameters and resulting in a "best and final" offer.&lt;SEP&gt;The process of negotiating with tenderers after tender submission but before contract award.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Service Contracts">
+  <data key="d0">Service Contracts</data>
+  <data key="d1">Document</data>
+  <data key="d2">Service Contracts formalize agreements with contractors, detailing terms such as service standards, payment schedules, and probity clauses.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender Evaluation Form">
+  <data key="d0">Tender Evaluation Form</data>
+  <data key="d1">Document</data>
+  <data key="d2">A form designed for panel members to independently assess tenders before discussion, enhancing fairness and objectivity in scoring.&lt;SEP&gt;Sample form used for evaluating tenders submitted by contractors.&lt;SEP&gt;The Tender Evaluation Form is a document used by panel members to individually score and evaluate each tender.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender Evaluation Report">
+  <data key="d0">Tender Evaluation Report</data>
+  <data key="d1">Document</data>
+  <data key="d2">A report submitted by procurement staff recommending the best tender offer or suggesting post-tender negotiation, for endorsement by the approving authority.&lt;SEP&gt;Sample report used for documenting the evaluation results of tenders.&lt;SEP&gt;The Tender Evaluation Report summarizes the assessment process, compliance checks, and recommendations for tender awards.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168&lt;SEP&gt;chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Best and Final Offer">
+  <data key="d0">Best and Final Offer</data>
+  <data key="d1">Category</data>
+  <data key="d2">The final proposal submitted in writing by a bidder after post-tender negotiation, which is then evaluated by the tender evaluation panel.</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Best Practice Checklist (BPC)">
+  <data key="d0">Best Practice Checklist (BPC)</data>
+  <data key="d1">Document</data>
+  <data key="d2">A user-friendly guide providing procedures and safeguards to prevent malpractice in the letting and administration of cleaning and security contracts.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="ICAC (Independent Commission Against Corruption)">
+  <data key="d0">ICAC (Independent Commission Against Corruption)</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Hong Kong's anti-corruption agency that provides free, confidential corruption prevention advice to private companies.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Advisory Services Group">
+  <data key="d0">Advisory Services Group</data>
+  <data key="d1">Organization</data>
+  <data key="d2">A group within ICAC's Corruption Prevention Department that offers tailored corruption prevention advice.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Corruption Prevention Department">
+  <data key="d0">Corruption Prevention Department</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The department within ICAC responsible for preventing corruption through advisory services.&lt;SEP&gt;The Corruption Prevention Department is part of the Independent Commission Against Corruption, located in Hong Kong.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Organizations/Companies">
+  <data key="d0">Organizations/Companies</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Entities that contract out cleaning and security services to external providers.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Contract Letting Process">
+  <data key="d0">Contract Letting Process</data>
+  <data key="d1">Category</data>
+  <data key="d2">The process of inviting, evaluating, and awarding service contracts to contractors.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Service Monitoring">
+  <data key="d0">Service Monitoring</data>
+  <data key="d1">Category</data>
+  <data key="d2">The process of overseeing and evaluating contractor performance and service deliverables.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Quotation Invitation Form">
+  <data key="d0">Quotation Invitation Form</data>
+  <data key="d1">Document</data>
+  <data key="d2">Sample form used for inviting quotations from potential contractors.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Contractor Performance Evaluation Checklist">
+  <data key="d0">Contractor Performance Evaluation Checklist</data>
+  <data key="d1">Document</data>
+  <data key="d2">Sample checklist used for monitoring and evaluating contractor performance.&lt;SEP&gt;A standardized form used to assess contractor performance across various criteria including quality, timeliness, and responsiveness.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b&lt;SEP&gt;chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Management Supervision">
+  <data key="d0">Management Supervision</data>
+  <data key="d1">Category</data>
+  <data key="d2">Oversight and supervision by management throughout the contract administration process.</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender">
+  <data key="d0">Tender</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Tender is a formal offer to provide goods or services at a specified price, which bidders agree to abide by for a set period.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Bidder/Tenderer">
+  <data key="d0">Bidder/Tenderer</data>
+  <data key="d1">Organization</data>
+  <data key="d2">A Bidder or Tenderer is a company submitting a formal offer in response to a tender invitation.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Annex 3">
+  <data key="d0">Annex 3</data>
+  <data key="d1">Document</data>
+  <data key="d2">Annex 3 is an attachment to the Tender Invitation Letter containing anti-bribery and anti-collusion clauses.&lt;SEP&gt;Annex 3 contains anti-bribery and anti-collusion clauses and confirmation letter requirements.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Witness">
+  <data key="d0">Witness</data>
+  <data key="d1">Person</data>
+  <data key="d2">An individual who signs to verify the tender opening process, ensuring its integrity and transparency.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Assessment Panel">
+  <data key="d0">Assessment Panel</data>
+  <data key="d1">Organization</data>
+  <data key="d2">A group responsible for evaluating tenders, identifying strengths and weaknesses, and making recommendations for contract awards.&lt;SEP&gt;The Assessment Panel is responsible for evaluating tender submissions and making recommendations for contract awards.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337583</data>
+</node>
+<node id="Tender Specifications">
+  <data key="d0">Tender Specifications</data>
+  <data key="d1">Document</data>
+  <data key="d2">The detailed requirements and conditions that tenders must comply with to be considered for evaluation.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Tender Qualifications">
+  <data key="d0">Tender Qualifications</data>
+  <data key="d1">Document</data>
+  <data key="d2">Additional conditions or clarifications submitted by a tenderer that may alter the original tender specifications.</data>
+  <data key="d3">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="User/Contract Administration Staff">
+  <data key="d0">User/Contract Administration Staff</data>
+  <data key="d1">Organization</data>
+  <data key="d2">User/Contract Administration Staff are responsible for monitoring contractor performance, conducting checks, reviewing deliverables, and processing payments.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Accounting Staff">
+  <data key="d0">Accounting Staff</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Accounting Staff verify and process payment claims, ensure accuracy of supporting documents, and adhere to internal time limits for payment processing.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Performance Evaluation Checklist">
+  <data key="d0">Performance Evaluation Checklist</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Performance Evaluation Checklist is a tool used to record and assess contractor performance, including adverse observations during site visits.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Probity Clause">
+  <data key="d0">Probity Clause</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Probity Clause is a contract condition prohibiting contractors and their staff from offering, soliciting, or accepting bribes during contract performance.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Insurance Policies">
+  <data key="d0">Insurance Policies</data>
+  <data key="d1">Document</data>
+  <data key="d2">Insurance Policies are required documents under the contract, providing coverage as specified in the agreement.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Attendance Records">
+  <data key="d0">Attendance Records</data>
+  <data key="d1">Document</data>
+  <data key="d2">Attendance Records are supporting documents required for payment claims, verifying the presence and work of contractor staff.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Invoices">
+  <data key="d0">Invoices</data>
+  <data key="d1">Document</data>
+  <data key="d2">Invoices are submitted by contractors as part of payment claims, detailing charges for services rendered.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Log Book">
+  <data key="d0">Log Book</data>
+  <data key="d1">Document</data>
+  <data key="d2">A Log Book is maintained by contractors to record all special or additional job orders, used for verification and payment certification.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Disciplinary Action">
+  <data key="d0">Disciplinary Action</data>
+  <data key="d1">Category</data>
+  <data key="d2">Disciplinary Action refers to procedures taken against contractors for breaches of contract or unsatisfactory performance, including payment deductions or contract termination.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Payment Claims">
+  <data key="d0">Payment Claims</data>
+  <data key="d1">Category</data>
+  <data key="d2">Payment Claims are requests submitted by contractors with supporting documents like invoices and attendance records, processed within specified time limits.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Surprise Checks">
+  <data key="d0">Surprise Checks</data>
+  <data key="d1">Category</data>
+  <data key="d2">Surprise Checks are unannounced inspections conducted by User/Contract Administration Staff to verify contractor performance and compliance.</data>
+  <data key="d3">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Tender Document">
+  <data key="d0">Tender Document</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Tender Document is an official invitation for tender issued by a company/organization for the provision of specific services, containing detailed requirements and submission guidelines.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Annex 1">
+  <data key="d0">Annex 1</data>
+  <data key="d1">Document</data>
+  <data key="d2">Annex 1 contains the detailed specifications and schedule of services required for the tender.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Annex 2">
+  <data key="d0">Annex 2</data>
+  <data key="d1">Document</data>
+  <data key="d2">Annex 2 lists the mandatory requirements and documents that tenderers must submit for eligibility evaluation.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Annex 4">
+  <data key="d0">Annex 4</data>
+  <data key="d1">Document</data>
+  <data key="d2">Annex 4 is the Form of Tender document that must be completed by tenderers.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Prevention of Bribery Ordinance (Cap. 201)">
+  <data key="d0">Prevention of Bribery Ordinance (Cap. 201)</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Prevention of Bribery Ordinance is the legal framework referenced in the anti-bribery clauses of the tender document.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Type of Services">
+  <data key="d0">Type of Services</data>
+  <data key="d1">Category</data>
+  <data key="d2">The specific category of services required by the Company/Organization, to be detailed in the tender specifications.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Anti-Bribery and Anti-Collusion Clauses">
+  <data key="d0">Anti-Bribery and Anti-Collusion Clauses</data>
+  <data key="d1">Document</data>
+  <data key="d2">Specific contractual provisions that tenderers must abide by to prevent corruption and collusion in the tendering process.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Business Registration Certificate">
+  <data key="d0">Business Registration Certificate</data>
+  <data key="d1">Document</data>
+  <data key="d2">A mandatory document that tenderers must submit as proof of company registration.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="ISO 9001 Certification">
+  <data key="d0">ISO 9001 Certification</data>
+  <data key="d1">Document</data>
+  <data key="d2">An optional quality assurance certification that tenderers may submit if available.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Company Code of Conduct">
+  <data key="d0">Company Code of Conduct</data>
+  <data key="d1">Document</data>
+  <data key="d2">An optional document outlining staff conduct policies that tenderers may submit if available.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Complaints Handling Procedures">
+  <data key="d0">Complaints Handling Procedures</data>
+  <data key="d1">Document</data>
+  <data key="d2">An optional document detailing complaint resolution processes that tenderers may submit if available.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Declaration of No Litigation">
+  <data key="d0">Declaration of No Litigation</data>
+  <data key="d1">Document</data>
+  <data key="d2">A mandatory declaration issued by a solicitor confirming no litigation for the past five years.</data>
+  <data key="d3">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Company / Organization">
+  <data key="d0">Company / Organization</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The Company/Organization is the entity conducting the tender process and making contract award decisions.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Successful Tenderer">
+  <data key="d0">Successful Tenderer</data>
+  <data key="d1">Organization</data>
+  <data key="d2">The successful tenderer is the company selected for contract award after the tender evaluation process.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Unsuccessful Tenderers">
+  <data key="d0">Unsuccessful Tenderers</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Unsuccessful tenderers are companies that submitted bids but were not selected for the contract award.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Independent Commission Against Corruption">
+  <data key="d0">Independent Commission Against Corruption</data>
+  <data key="d1">Organization</data>
+  <data key="d2">An anti-corruption agency based in Hong Kong that includes the Corruption Prevention Department.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Tender Evaluation Process">
+  <data key="d0">Tender Evaluation Process</data>
+  <data key="d1">Category</data>
+  <data key="d2">The systematic process of assessing and comparing tender submissions to select the most suitable contractor.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Hong Kong">
+  <data key="d0">Hong Kong</data>
+  <data key="d1">Location</data>
+  <data key="d2">Hong Kong is the location where the Independent Commission Against Corruption and its Corruption Prevention Department are based.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="303 Java Road, North Point">
+  <data key="d0">303 Java Road, North Point</data>
+  <data key="d1">Location</data>
+  <data key="d2">The specific address of the Independent Commission Against Corruption's Corruption Prevention Department in Hong Kong.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Tender Documents">
+  <data key="d0">Tender Documents</data>
+  <data key="d1">Document</data>
+  <data key="d2">Official documents prepared for the tender process that include specifications, requirements, and evaluation criteria.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Warning Letter">
+  <data key="d0">Warning Letter</data>
+  <data key="d1">Document</data>
+  <data key="d2">A formal document issued to contractors who perform poorly, indicating areas needing improvement.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Senior Management">
+  <data key="d0">Senior Management</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Senior management personnel responsible for reviewing tender specifications and assessment results to detect favoritism.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Contract Award Decision">
+  <data key="d0">Contract Award Decision</data>
+  <data key="d1">Category</data>
+  <data key="d2">The final decision-making process for selecting which tenderer receives the contract.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Performance Rating System">
+  <data key="d0">Performance Rating System</data>
+  <data key="d1">Category</data>
+  <data key="d2">A standardized rating system (0-4) used to evaluate contractor performance across multiple criteria.</data>
+  <data key="d3">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337584</data>
+</node>
+<node id="Quotation Submission">
+  <data key="d0">Quotation Submission</data>
+  <data key="d3">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d2">Quotations must be submitted in a sealed envelope marked with the reference number for security and proper handling.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337585</data>
+</node>
+<node id="High-Value Purchases">
+  <data key="d0">High-Value Purchases</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d2">The two-envelope system is used for high-value purchases where price is not the only consideration in the assessment.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Procurement Policies">
+  <data key="d0">Procurement Policies</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d2">Management specifies procurement methods, determines approval levels, and regularly reviews procurement policies and guidelines.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Procurement Processes">
+  <data key="d0">Procurement Processes</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d2">Duty segregation assigns different staff to sourcing contractors, contract preparation, and service monitoring to enhance control.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Tender Document Approval">
+  <data key="d0">Tender Document Approval</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d2">Management appoints a panel of staff to vet and approve tender documents including assessment criteria.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Competitiveness">
+  <data key="d0">Competitiveness</data>
+  <data key="d3">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d2">The approved contractors list must contain an adequate number of contractors to enhance competitiveness in procurement exercises.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Late Submissions">
+  <data key="d0">Late Submissions</data>
+  <data key="d3">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d2">The Designated Authority has the power to approve the acceptance of late tender submissions on justifiable grounds, such as an insufficient number of tenders received.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="ICAC">
+  <data key="d0">ICAC</data>
+  <data key="d3">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d2">ICAC developed and published the Best Practice Checklist to provide guidance on preventing corruption in service contracts.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d5">1757337586</data>
+</node>
+<node id="Software Development Agreement">
+  <data key="d0">Software Development Agreement</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Software Development Agreement is a contract outlining terms for software development services between ABC Company and XYZ Corporation.&lt;SEP&gt;The agreement outlines terms for software development services between ABC Company and XYZ Corporation.</data>
+  <data key="d3">chunk-24680041a8c2909e3937490f6b37969e&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="ABC Company">
+  <data key="d0">ABC Company</data>
+  <data key="d1">Organization</data>
+  <data key="d2">ABC Company is the uploader company and a party to the Software Development Agreement for software development services.&lt;SEP&gt;ABC Company is a party to the software development agreement, receiving services from XYZ Corporation.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="XYZ Corporation">
+  <data key="d0">XYZ Corporation</data>
+  <data key="d1">Organization</data>
+  <data key="d2">XYZ Corporation is the other company party to the Software Development Agreement for software development services.&lt;SEP&gt;XYZ Corporation is a software development company providing services to ABC Company under the agreement.&lt;SEP&gt;XYZ Corporation is the other company and a party to the Software Development Agreement for software development services.&lt;SEP&gt;XYZ Corporation is a party providing software development services to ABC Company under the outlined agreement.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="Custom Web Application">
+  <data key="d0">Custom Web Application</data>
+  <data key="d1">Product</data>
+  <data key="d2">The custom web application is the software product being developed, featuring user authentication, dashboard interface, data analytics, and mobile responsiveness.&lt;SEP&gt;A custom web application is the deliverable product being developed as part of the software development project.&lt;SEP&gt;A custom web application is the project deliverable, featuring user authentication, dashboard, analytics, and mobile responsiveness.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="User Authentication System">
+  <data key="d0">User Authentication System</data>
+  <data key="d1">Technology</data>
+  <data key="d2">The user authentication system is a specified feature of the custom web application being developed.&lt;SEP&gt;User authentication system is one of the technical specifications required in the web application.&lt;SEP&gt;User authentication system is a specified feature of the custom web application being developed.&lt;SEP&gt;A user authentication system is a specified feature of the custom web application.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="Dashboard Interface">
+  <data key="d0">Dashboard Interface</data>
+  <data key="d1">Technology</data>
+  <data key="d2">The dashboard interface is a specified feature of the custom web application being developed.&lt;SEP&gt;Dashboard interface is a specified feature component of the custom web application.&lt;SEP&gt;Dashboard interface is a specified feature of the custom web application being developed.&lt;SEP&gt;A dashboard interface is a specified feature of the custom web application.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="Data Analytics Features">
+  <data key="d0">Data Analytics Features</data>
+  <data key="d1">Technology</data>
+  <data key="d2">Data analytics features are specified components of the custom web application being developed.&lt;SEP&gt;Data analytics features are among the technical requirements specified for the web application.&lt;SEP&gt;Data analytics features are specified components of the custom web application.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="Mobile Responsiveness">
+  <data key="d0">Mobile Responsiveness</data>
+  <data key="d1">Technology</data>
+  <data key="d2">Mobile responsiveness is a specified requirement for the custom web application being developed.&lt;SEP&gt;Mobile responsiveness is a technical requirement ensuring the web application works on mobile devices.&lt;SEP&gt;Mobile responsiveness is a specified requirement for the custom web application.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="CONT_000001">
+  <data key="d0">CONT_000001</data>
+  <data key="d1">Category</data>
+  <data key="d2">CONT_000001 is the unique contract identifier for the Software Development Agreement.&lt;SEP&gt;CONT_000001 is the unique identifier for the Software Development Agreement contract.&lt;SEP&gt;CONT_000001 is the unique identifier for the Test Contract.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="$75,000.00">
+  <data key="d0">$75,000.00</data>
+  <data key="d1">Category</data>
+  <data key="d2">$75,000.00 is the contract amount specified in the Software Development Agreement.&lt;SEP&gt;The contract amount of $75,000.00 represents the total financial value of the Software Development Agreement.</data>
+  <data key="d3">chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559233</data>
+</node>
+<node id="cross-company">
+  <data key="d0">cross-company</data>
+  <data key="d1">Category</data>
+  <data key="d2">Cross-company is the contract type indicating the agreement is between two different companies.</data>
+  <data key="d3">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757345042</data>
+</node>
+<node id="6 months">
+  <data key="d0">6 months</data>
+  <data key="d1">Category</data>
+  <data key="d2">6 months is the estimated total project duration for the software development services.</data>
+  <data key="d3">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757345042</data>
+</node>
+<node id="Monthly Milestones">
+  <data key="d0">Monthly Milestones</data>
+  <data key="d1">Category</data>
+  <data key="d2">Monthly milestones are the progress tracking points specified in the Software Development Agreement.&lt;SEP&gt;Monthly milestones are the progress tracking mechanism specified in the development timeline.&lt;SEP&gt;Monthly milestones represent the project timeline structure with progress checkpoints throughout the six-month duration.&lt;SEP&gt;Monthly milestones are specified as part of the project timeline and progress tracking mechanism.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="pending">
+  <data key="d0">pending</data>
+  <data key="d1">Category</data>
+  <data key="d2">Pending is the current status of the Software Development Agreement.</data>
+  <data key="d3">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757345042</data>
+</node>
+<node id="Test Document">
+  <data key="d0">Test Document</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Test Document is the subject of the input text, which is described as a test document.&lt;SEP&gt;The Test Document is the subject of the input text, though no specific details about its content or purpose are provided.</data>
+  <data key="d3">chunk-b7d61913805b4ce2aae6dba632f085f3&lt;SEP&gt;chunk-49c11da52d38c0512fb8169340db16f3</data>
+  <data key="d4">test_source&lt;SEP&gt;test</data>
+  <data key="d5">1757559089</data>
+</node>
+<node id="Test Contract">
+  <data key="d0">Test Contract</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Test Contract is the subject of analysis in the provided content.&lt;SEP&gt;Test Contract is a document with the ID CONT_000001 and a value of $50,000.00 for software development services.</data>
+  <data key="d3">chunk-572aa59ab24d17397a6cf5d3b53041ae&lt;SEP&gt;chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">word_analysis_test&lt;SEP&gt;contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="Contract Analysis">
+  <data key="d0">Contract Analysis</data>
+  <data key="d1">Category</data>
+  <data key="d2">Contract Analysis refers to the process of examining and evaluating the terms and conditions within a contract.</data>
+  <data key="d3">chunk-572aa59ab24d17397a6cf5d3b53041ae</data>
+  <data key="d4">word_analysis_test</data>
+  <data key="d5">1757482994</data>
+</node>
+<node id="Text Analysis Content">
+  <data key="d0">Text Analysis Content</data>
+  <data key="d1">Category</data>
+  <data key="d2">Text Analysis Content refers to the process of examining text to identify specific elements or patterns.</data>
+  <data key="d3">chunk-79cc91933ce4dfcf4cf7f40b60b0decb</data>
+  <data key="d4">word_analysis_1757483119</data>
+  <data key="d5">1757483132</data>
+</node>
+<node id="Suspicious Words">
+  <data key="d0">Suspicious Words</data>
+  <data key="d1">Category</data>
+  <data key="d2">Suspicious Words are terms or phrases that may indicate potential issues, risks, or anomalies within the analyzed text.</data>
+  <data key="d3">chunk-79cc91933ce4dfcf4cf7f40b60b0decb</data>
+  <data key="d4">word_analysis_1757483119</data>
+  <data key="d5">1757483132</data>
+</node>
+<node id="Test document">
+  <data key="d0">Test document</data>
+  <data key="d1">Document</data>
+  <data key="d2">The Test document is the input text being processed for entity and relationship extraction.&lt;SEP&gt;The Test document is used for verifying API connectivity and functionality.</data>
+  <data key="d3">chunk-fee2a658c6f3a044db68cc3512210045&lt;SEP&gt;chunk-8516e17c74d7b35e0c49e0d63188a341</data>
+  <data key="d4">test&lt;SEP&gt;api_test</data>
+  <data key="d5">1757559668</data>
+</node>
+<node id="Software Development Services">
+  <data key="d0">Software Development Services</data>
+  <data key="d1">Category</data>
+  <data key="d2">Software development services are the core subject of the agreement between ABC Company and XYZ Corporation.&lt;SEP&gt;Software Development Services are the subject and purpose of the Test Contract.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995&lt;SEP&gt;chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d4">test_contract_analysis&lt;SEP&gt;contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="6-Month Project Duration">
+  <data key="d0">6-Month Project Duration</data>
+  <data key="d1">Category</data>
+  <data key="d2">The project has an estimated total duration of six months as outlined in the agreement.&lt;SEP&gt;The total project duration is estimated at 6 months with monthly milestones.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f</data>
+  <data key="d4">test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d5">1757559844</data>
+</node>
+<node id="Agreement">
+  <data key="d0">Agreement</data>
+  <data key="d1">Document</data>
+  <data key="d2">The agreement is the contract document outlining terms for software development services between ABC Company and XYZ Corporation.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d4">test_contract_analysis</data>
+  <data key="d5">1757558982</data>
+</node>
+<node id="Cross-Company Contract">
+  <data key="d0">Cross-Company Contract</data>
+  <data key="d1">Category</data>
+  <data key="d2">The contract type is cross-company, indicating an agreement between two different companies.</data>
+  <data key="d3">chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559233</data>
+</node>
+<node id="Six-Month Project Duration">
+  <data key="d0">Six-Month Project Duration</data>
+  <data key="d1">Category</data>
+  <data key="d2">The project has an estimated duration of six months with monthly milestones.</data>
+  <data key="d3">chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559233</data>
+</node>
+<node id="$50,000.00">
+  <data key="d0">$50,000.00</data>
+  <data key="d1">Category</data>
+  <data key="d2">$50,000.00 is the monetary value specified in the Test Contract.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="Contract Title">
+  <data key="d0">Contract Title</data>
+  <data key="d1">Category</data>
+  <data key="d2">Contract Title is a metadata field specifying the name of the document as "Test Contract".</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="Contract ID">
+  <data key="d0">Contract ID</data>
+  <data key="d1">Category</data>
+  <data key="d2">Contract ID is a metadata field containing the unique identifier "CONT_000001" for the contract.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="Contract Amount">
+  <data key="d0">Contract Amount</data>
+  <data key="d1">Category</data>
+  <data key="d2">Contract Amount is a metadata field specifying the monetary value of "$50,000.00" for the contract.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="Contract Content">
+  <data key="d0">Contract Content</data>
+  <data key="d1">Category</data>
+  <data key="d2">Contract Content is a metadata field describing the purpose of the contract as being for software development services.</data>
+  <data key="d3">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d4">contract_CONT_000001</data>
+  <data key="d5">1757559285</data>
+</node>
+<node id="API">
+  <data key="d0">API</data>
+  <data key="d1">Technology</data>
+  <data key="d2">API refers to Application Programming Interface, a set of protocols for building software applications.</data>
+  <data key="d3">chunk-fee2a658c6f3a044db68cc3512210045</data>
+  <data key="d4">api_test</data>
+  <data key="d5">1757559668</data>
+</node>
+<node id="Connectivity Check">
+  <data key="d0">Connectivity Check</data>
+  <data key="d1">Category</data>
+  <data key="d2">Connectivity Check refers to the process of verifying network or system connections, which is the purpose of the Test document.</data>
+  <data key="d3">chunk-fee2a658c6f3a044db68cc3512210045</data>
+  <data key="d4">api_test</data>
+  <data key="d5">1757559668</data>
+</node>
+<edge source="Procurement Staff" target="Approved List of Contractors">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff are responsible for maintaining, reviewing, and vetting contractors against criteria for the Approved List.</data>
+  <data key="d8">contractor evaluation,list management</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Contractors">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff invite, evaluate, and manage contractor submissions through quotation and tender processes.</data>
+  <data key="d8">bid management,vendor relations</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Tender Box">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff implement secure handling procedures using Tender Box with double-lock system for bid integrity.</data>
+  <data key="d8">bid handling,security procedures</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Two-Envelope Approach">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff may employ the Two-Envelope Approach to separate service and price evaluation for objective assessment.</data>
+  <data key="d8">bid evaluation,objective assessment</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Electronic Tendering System">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff may use an Electronic Tendering System with access control for receiving and managing tender submissions.</data>
+  <data key="d8">bid management,technology utilization</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Site Visit">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff may arrange site visits and briefings for all interested tenderers to ensure equal information access.</data>
+  <data key="d8">bidder support,transparency</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Procurement Staff" target="Conflict of Interest Declaration">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement staff are required to declare any conflicts of interest and take steps to remove such conflicts.</data>
+  <data key="d8">ethical compliance,staff responsibility</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Tender/Quotation Document">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement staff prepare invitation documents containing service specifications, contract terms, and selection criteria.</data>
+  <data key="d8">document preparation,specification development</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Approved Contractors List">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement staff maintain the approved contractors list and ensure it contains an adequate number of contractors for competitiveness.</data>
+  <data key="d8">contractor management,list maintenance</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Quotations">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff check quotations for compliance with requirements and evaluate them based on price or other selection criteria.</data>
+  <data key="d8">compliance check,evaluation</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Quotation/Tender Opening Record">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff are responsible for keeping proper records of all quotations and tenders received and opened for future audit.</data>
+  <data key="d8">audit trail,record keeping</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Purchase Requisition Form">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff recommend a selected contractor on the Purchase Requisition Form, attaching all quotations for endorsement.</data>
+  <data key="d8">documentation,recommendation</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Procurement Staff" target="Tender Evaluation Report">
+  <data key="d6">1.0</data>
+  <data key="d7">Procurement Staff submit a tender evaluation report to the approving authority, recommending the best offer or suggesting negotiation.</data>
+  <data key="d8">recommendation,reporting</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Approved List of Contractors" target="Contractors">
+  <data key="d6">1.0</data>
+  <data key="d7">Contractors must meet specific criteria to be included on the Approved List and are regularly reviewed for performance.</data>
+  <data key="d8">performance monitoring,qualification</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Contractors" target="Designated Authority">
+  <data key="d6">1.0</data>
+  <data key="d7">Designated Authority approves contractor shortlists and justifies any deviations from standard invitation procedures.</data>
+  <data key="d8">approval authority,oversight</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Contractors" target="Listing Criteria">
+  <data key="d6">1.0</data>
+  <data key="d7">Listing Criteria are used to vet contractor applications and regularly review contractor performance for continued listing.</data>
+  <data key="d8">performance evaluation,qualification standards</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Contractors" target="Organizations/Companies">
+  <data key="d6">1.0</data>
+  <data key="d7">Organizations and companies appoint contractors to provide cleaning and security services through outsourcing arrangements.</data>
+  <data key="d8">outsourcing,service provision</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contractors" target="User/Contract Administration Staff">
+  <data key="d6">1.0</data>
+  <data key="d7">User/Contract Administration Staff monitor contractor performance, conduct surprise checks, and record adverse performance.</data>
+  <data key="d8">monitoring,performance evaluation</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contractors" target="Performance Evaluation Checklist">
+  <data key="d6">1.0</data>
+  <data key="d7">Contractors' performance is assessed using the Performance Evaluation Checklist, with results shared for awareness.</data>
+  <data key="d8">documentation,performance assessment</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contractors" target="Contract">
+  <data key="d6">1.0</data>
+  <data key="d7">The contract imposes obligations on contractors, including prohibitions on subcontracting and requirements for insurance and probity.</data>
+  <data key="d8">obligations,prohibitions</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Contractors" target="Log Book">
+  <data key="d6">1.0</data>
+  <data key="d7">Contractors are required to maintain a log book documenting all special or additional job orders for verification purposes.</data>
+  <data key="d8">job documentation,record keeping</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Designated Authority" target="Late Submissions">
+  <data key="d6">1.0</data>
+  <data key="d7">The Designated Authority has the power to approve the acceptance of late tender submissions on justifiable grounds, such as an insufficient number of tenders received.</data>
+  <data key="d8">exception approval,justifiable grounds</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Tender Box" target="Management">
+  <data key="d6">1.0</data>
+  <data key="d7">Management lays down procedures for using Tender Box with double-lock system to enhance checks and balances.</data>
+  <data key="d8">oversight,security protocols</data>
+  <data key="d9">chunk-3f514fc42668cf5862bed80898834048</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tender Box" target="Tenderer">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers must physically deliver their sealed tender documents to the designated tender box by the specified deadline.</data>
+  <data key="d8">document submission,physical delivery</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Two-Envelope Approach" target="Tender Evaluation Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tender Evaluation Panel uses the two-envelope approach, opening price offers only after service proposals have been assessed to ensure a fair process.</data>
+  <data key="d8">evaluation method,procedural fairness</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Quotation/Tender Opening Record" target="Witness">
+  <data key="d6">1.0</data>
+  <data key="d7">A Witness signs the Quotation/Tender Opening Record to confirm the accuracy and legitimacy of the tender opening process.</data>
+  <data key="d8">documentation,verification</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Site Visit" target="Tenderer">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers may request a site visit to better understand the service requirements and environment.</data>
+  <data key="d8">due diligence,information gathering</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Management" target="Procurement Policies">
+  <data key="d6">1.0</data>
+  <data key="d7">Management specifies procurement methods, determines approval levels, and regularly reviews procurement policies and guidelines.</data>
+  <data key="d8">guideline oversight,policy establishment</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Management" target="Tender Document Approval">
+  <data key="d6">1.0</data>
+  <data key="d7">Management appoints a panel of staff to vet and approve tender documents including assessment criteria.</data>
+  <data key="d8">document vetting,panel appointment</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Management" target="Tender Evaluation Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">Management appoints the Tender Evaluation Panel and sets guidelines for tender evaluation to ensure fairness and transparency.</data>
+  <data key="d8">appointment,oversight</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Management" target="Post-Tender Negotiation">
+  <data key="d6">1.0</data>
+  <data key="d7">Management lays down guidelines for post-tender negotiation, including selection criteria and negotiation parameters.</data>
+  <data key="d8">guideline setting,parameter definition</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Management" target="Service Contracts">
+  <data key="d6">1.0</data>
+  <data key="d7">Management oversees the inclusion of probity clauses and other key terms in service contracts to ensure integrity and performance standards.</data>
+  <data key="d8">compliance,oversight</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Management" target="Contract">
+  <data key="d6">1.0</data>
+  <data key="d7">Management ensures that contract administration and procurement processes comply with laid-down policies and procedures.</data>
+  <data key="d8">compliance,oversight</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Management" target="User/Contract Administration Staff">
+  <data key="d6">1.0</data>
+  <data key="d7">Management supervises User/Contract Administration Staff, arranging audits to ensure compliance with procedures.</data>
+  <data key="d8">audit,supervision</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Management" target="Disciplinary Action">
+  <data key="d6">1.0</data>
+  <data key="d7">Management requires proper records of disciplinary actions taken against contractors and receives periodic reports.</data>
+  <data key="d8">accountability,oversight</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Company/Organization" target="Tenderer">
+  <data key="d6">2.0</data>
+  <data key="d7">The Tenderer submits a bid to the Company/Organization and must comply with its specified rules and documentation requirements.&lt;SEP&gt;The Company/Organization seeks service providers through the tender process, establishing a potential contractual relationship with selected tenderers.</data>
+  <data key="d8">compliance,contract bidding,procurement relationship,service provision</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Company/Organization" target="Contractor">
+  <data key="d6">1.0</data>
+  <data key="d7">Contractors provide services to the Company/Organization through a formal quotation and contracting process.</data>
+  <data key="d8">business relationship,service provision</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Company/Organization" target="Sample Form for Invitation of Quotation">
+  <data key="d6">1.0</data>
+  <data key="d7">The Sample Form for Invitation of Quotation is used by the Company/Organization to formally request service quotations from contractors.</data>
+  <data key="d8">formal request,procurement process</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Company/Organization" target="Sample Letter for Invitation of Tender">
+  <data key="d6">1.0</data>
+  <data key="d7">The Sample Letter for Invitation of Tender is used by the Company/Organization to formally invite contractors to submit tenders for services.</data>
+  <data key="d8">formal invitation,tender process</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Company/Organization" target="Tender Document">
+  <data key="d6">1.0</data>
+  <data key="d7">The Company/Organization issues the Tender Document to invite service providers for specific services.</data>
+  <data key="d8">procurement process,tender issuance</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="Confirmation Letter">
+  <data key="d6">2.0</data>
+  <data key="d7">The Tenderer is required to submit a signed Confirmation Letter to affirm they have not colluded in the tender process.&lt;SEP&gt;Tenderers must submit a Confirmation Letter along with other required documents.</data>
+  <data key="d8">compliance verification,document submission,legal affirmation</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tenderer" target="Form of Tender">
+  <data key="d6">2.0</data>
+  <data key="d7">The Tenderer completes and submits the Form of Tender, which includes their offer details and proposed sum for the services.&lt;SEP&gt;Tenderers must complete and submit the Form of Tender as part of their bid package.</data>
+  <data key="d8">document submission,offer submission,service details,tender process</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995&lt;SEP&gt;chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tenderer" target="Anti-Collusion Clause">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tenderer must abide by the Anti-Collusion Clause, which prohibits certain communications and arrangements with other parties.</data>
+  <data key="d8">legal obligation,rule compliance</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tenderer" target="Employer">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tenderer submits a bid to the Employer to provide the specified Services.</data>
+  <data key="d8">contractual bidding,service provision</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tenderer" target="Annex 2">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers must meet the requirements and submit documents specified in Annex 2 to be considered eligible.</data>
+  <data key="d8">document submission,eligibility requirements</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="Tender Document">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers must comply with all requirements and submit documents as specified in the Tender Document.</data>
+  <data key="d8">bid submission,compliance requirements</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="Type of Services">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers are bidding to provide the specific type of services required by the Company/Organization.</data>
+  <data key="d8">bid response,service provision</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="Business Registration Certificate">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers must submit their Business Registration Certificate as proof of legal company registration.</data>
+  <data key="d8">document submission,legal verification</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="ISO 9001 Certification">
+  <data key="d6">1.0</data>
+  <data key="d7">Tenderers may submit ISO 9001 certification to demonstrate quality management capabilities if available.</data>
+  <data key="d8">optional submission,quality assurance</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tenderer" target="Assessment Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">The Assessment Panel evaluates tender submissions and makes recommendations about which tenderer should be awarded the contract.</data>
+  <data key="d8">evaluation,recommendation</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337589</data>
+</edge>
+<edge source="Form of Tender" target="Tender Invitation Letter">
+  <data key="d6">1.0</data>
+  <data key="d7">The Form of Tender is prepared in accordance with the terms and conditions stipulated in the Tender Invitation Letter.</data>
+  <data key="d8">document reference,terms adherence</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Form of Tender" target="Services">
+  <data key="d6">1.0</data>
+  <data key="d7">The Form of Tender contains a detailed description and offer for the provision of the Services.</data>
+  <data key="d8">contractual offer,service specification</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Form of Tender" target="Hong Kong Dollars">
+  <data key="d6">1.0</data>
+  <data key="d7">The total sum of the tender offer specified in the Form of Tender must be in Hong Kong Dollars.</data>
+  <data key="d8">currency,pricing specification</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tender Invitation Letter" target="Employer">
+  <data key="d6">1.0</data>
+  <data key="d7">The Employer issues the Tender Invitation Letter to solicit tenders from potential bidders.</data>
+  <data key="d8">formal request,issuance</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Tender Invitation Letter" target="Annex 3">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tender Invitation Letter includes Annex 3, which contains mandatory anti-bribery and anti-collusion clauses.</data>
+  <data key="d8">inclusion,regulatory compliance</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Tender Invitation Letter" target="Best Practice Checklist (BPC)">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC includes sample tender invitation letters as practical tools for organizations to implement the recommended practices.</data>
+  <data key="d8">implementation tools,sample documents</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contract" target="Probity Clause">
+  <data key="d6">1.0</data>
+  <data key="d7">The contract includes a Probity Clause to prevent bribery and ensure ethical conduct by contractors and their staff.</data>
+  <data key="d8">anti-corruption,integrity provision</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Anti-Collusion Clause" target="Excepted Communications">
+  <data key="d6">1.0</data>
+  <data key="d7">The Anti-Collusion Clause specifies that Excepted Communications are allowed for obtaining insurance quotes and consultant assistance.</data>
+  <data key="d8">permitted interactions,rule exception</data>
+  <data key="d9">chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Employer" target="Tender Evaluation Report">
+  <data key="d6">1.0</data>
+  <data key="d7">The Employer uses the Tender Evaluation Report to make a final decision on contract award.</data>
+  <data key="d8">contract award,decision-making</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Prevention of Bribery Ordinance" target="Quotation Exercise">
+  <data key="d6">1.0</data>
+  <data key="d7">The Prevention of Bribery Ordinance establishes legal requirements that must be followed during the quotation exercise to prevent corruption.</data>
+  <data key="d8">anti-corruption,legal compliance</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Prevention of Bribery Ordinance" target="Tender Document">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tender Document references the Prevention of Bribery Ordinance to establish anti-bribery requirements for tenderers.</data>
+  <data key="d8">anti-corruption framework,legal compliance</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Prevention of Bribery Ordinance" target="Anti-Bribery and Anti-Collusion Clauses">
+  <data key="d6">1.0</data>
+  <data key="d7">The anti-bribery clauses are based on and reference the Prevention of Bribery Ordinance as the legal framework.</data>
+  <data key="d8">legal compliance,regulatory framework</data>
+  <data key="d9">chunk-330b5b3024c3d915a93c52312e6eb37b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Quotation Form" target="Invitation Document">
+  <data key="d6">1.0</data>
+  <data key="d7">The Quotation Form is the required response document that contractors must submit as part of the Invitation Document process.</data>
+  <data key="d8">document submission,response format</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Quotation Form" target="Terms of Quotation">
+  <data key="d6">1.0</data>
+  <data key="d7">The Terms of Quotation govern how contractors must complete and submit the Quotation Form.</data>
+  <data key="d8">governing rules,submission requirements</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Tender Opening Record" target="Appendix 4">
+  <data key="d6">1.0</data>
+  <data key="d7">Appendix 4 specifically contains and references the Tender Opening Record with detailed quotation information.</data>
+  <data key="d8">detailed information,document reference</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Quotation Exercise" target="Quotation Closing Date">
+  <data key="d6">1.0</data>
+  <data key="d7">The quotation closing date establishes the final deadline for the quotation exercise submission process.</data>
+  <data key="d8">deadline constraint,process timeline</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Sealed Envelope" target="Quotation Submission">
+  <data key="d6">1.0</data>
+  <data key="d7">Quotations must be submitted in a sealed envelope marked with the reference number for security and proper handling.</data>
+  <data key="d8">delivery method,security measure</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337585</data>
+</edge>
+<edge source="Sealed Envelope" target="Quotation Reference Number">
+  <data key="d6">1.0</data>
+  <data key="d7">The quotation reference number must be marked on the sealed envelope for identification and tracking purposes.</data>
+  <data key="d8">identification marking,tracking system</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Fax Transmission" target="Quotation Submission">
+  <data key="d6">1.0</data>
+  <data key="d7">Fax transmission serves as an alternative method for submitting quotations electronically.</data>
+  <data key="d8">alternative delivery,electronic submission</data>
+  <data key="d9">chunk-55a87516a184ba071100cd959a2784a2</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Open Tendering" target="Approving Authority">
+  <data key="d6">1.0</data>
+  <data key="d7">Open tendering requires approval at the senior management level for services above a specified value.</data>
+  <data key="d8">authority levels,procurement approval</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Restrictive Tendering" target="Approved Contractors List">
+  <data key="d6">1.0</data>
+  <data key="d7">Restrictive tendering involves inviting contractors from the approved list for services below a specified amount.</data>
+  <data key="d8">contractor sourcing,procurement methods</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Two-Envelope System" target="High-Value Purchases">
+  <data key="d6">1.0</data>
+  <data key="d7">The two-envelope system is used for high-value purchases where price is not the only consideration in the assessment.</data>
+  <data key="d8">assessment method,procurement evaluation</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Conflict of Interest Declaration" target="Senior Management">
+  <data key="d6">1.0</data>
+  <data key="d7">Senior management reviews tender specifications and assessment results to detect any favoritism when conflicts of interest are declared.</data>
+  <data key="d8">oversight,review</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Conflict of Interest Declaration" target="Assessment Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">Assessment Panel members must declare any conflicts of interest to ensure the integrity of the tender evaluation process.</data>
+  <data key="d8">compliance,ethical standards</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337589</data>
+</edge>
+<edge source="Purchase Requisition Form" target="Approving Authority">
+  <data key="d6">1.0</data>
+  <data key="d7">The Purchase Requisition Form is submitted to the approving authority for endorsement and approval.</data>
+  <data key="d8">approval process,request endorsement</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Purchase Requisition Form" target="User">
+  <data key="d6">1.0</data>
+  <data key="d7">User identifies service needs and draws up scope of service requirements using the Purchase Requisition Form.</data>
+  <data key="d8">documentation,service identification</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Purchase Requisition Form" target="Best Practice Checklist (BPC)">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC includes sample purchase requisition forms as practical tools for organizations to implement the recommended practices.</data>
+  <data key="d8">implementation tools,sample forms</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Approving Authority" target="Tender Evaluation Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">The Approving Authority endorses the recommendations of the Tender Evaluation Panel and ensures compliance with selection criteria.</data>
+  <data key="d8">approval,endorsement</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Approved Contractors List" target="Competitiveness">
+  <data key="d6">1.0</data>
+  <data key="d7">The approved contractors list must contain an adequate number of contractors to enhance competitiveness in procurement exercises.</data>
+  <data key="d8">market competition,vendor management</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="User" target="Service Contracts">
+  <data key="d6">1.0</data>
+  <data key="d7">The User helps include specific service requirements and terms in the service contract based on tender or quotation documents.</data>
+  <data key="d8">requirement inclusion,term specification</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Cleaning Contracts" target="Best Practice Checklist (BPC)">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC provides specific guidance and preventive measures for the administration of cleaning contracts.</data>
+  <data key="d8">guidance,prevention measures</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Cleaning Contracts" target="Security Contracts">
+  <data key="d6">1.0</data>
+  <data key="d7">Both cleaning and security contracts are types of service agreements with specific monitoring procedures and performance requirements.</data>
+  <data key="d8">performance monitoring,service categories</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Security Contracts" target="Best Practice Checklist (BPC)">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC provides specific guidance and preventive measures for the administration of security contracts.</data>
+  <data key="d8">guidance,prevention measures</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Duty Segregation" target="Procurement Processes">
+  <data key="d6">1.0</data>
+  <data key="d7">Duty segregation assigns different staff to sourcing contractors, contract preparation, and service monitoring to enhance control.</data>
+  <data key="d8">internal control,risk mitigation</data>
+  <data key="d9">chunk-e217c294eef81b650d0336bdfccd6f3b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Tenders" target="Tender Evaluation Panel">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tender Evaluation Panel assesses tenders using pre-determined criteria and weightings, ensuring objective evaluation before selecting the best offer.</data>
+  <data key="d8">assessment,scoring</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Tender Evaluation Panel" target="Tender Evaluation Form">
+  <data key="d6">2.0</data>
+  <data key="d7">The Tender Evaluation Panel uses a tender evaluation form for members to make independent assessments before discussion, promoting objectivity.&lt;SEP&gt;The Tender Evaluation Panel uses the Tender Evaluation Form to individually score and evaluate each tender.</data>
+  <data key="d8">assessment,assessment tool,independent scoring,scoring</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a&lt;SEP&gt;chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Tender Evaluation Panel" target="Tender Evaluation Report">
+  <data key="d6">1.0</data>
+  <data key="d7">The Tender Evaluation Panel compiles the Tender Evaluation Report, which includes compliance checks and award recommendations.</data>
+  <data key="d8">compilation,recommendation</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Negotiation Team" target="Post-Tender Negotiation">
+  <data key="d6">1.0</data>
+  <data key="d7">The Negotiation Team conducts post-tender negotiations within management-defined parameters and documents the process and results.</data>
+  <data key="d8">documentation,execution</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Negotiation Team" target="Best and Final Offer">
+  <data key="d6">1.0</data>
+  <data key="d7">The Negotiation Team requires bidders to submit a "best and final" offer in writing after post-tender negotiations are concluded.</data>
+  <data key="d8">negotiation outcome,written submission</data>
+  <data key="d9">chunk-91acb317caba3c0ce55f4e36d40b287a</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Post-Tender Negotiation" target="Contract Letting Process">
+  <data key="d6">1.0</data>
+  <data key="d7">Post-tender negotiation is a key procedure within the contract letting process for finalizing contract terms before award.</data>
+  <data key="d8">contract finalization,procurement procedure</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Best Practice Checklist (BPC)" target="ICAC">
+  <data key="d6">1.0</data>
+  <data key="d7">ICAC developed and published the Best Practice Checklist to provide guidance on preventing corruption in service contracts.</data>
+  <data key="d8">guidance development,publication</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Best Practice Checklist (BPC)" target="Contract Letting Process">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC provides detailed procedures and safeguards for the contract letting process to prevent malpractice.</data>
+  <data key="d8">procedural guidance,safeguards</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Best Practice Checklist (BPC)" target="Quotation Invitation Form">
+  <data key="d6">1.0</data>
+  <data key="d7">The BPC includes sample quotation invitation forms as practical tools for organizations to implement the recommended practices.</data>
+  <data key="d8">implementation tools,sample forms</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Advisory Services Group" target="Organizations/Companies">
+  <data key="d6">1.0</data>
+  <data key="d7">The Advisory Services Group provides free, confidential corruption prevention advice to private companies and organizations.</data>
+  <data key="d8">advisory services,corruption prevention</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337586</data>
+</edge>
+<edge source="Corruption Prevention Department" target="Independent Commission Against Corruption">
+  <data key="d6">1.0</data>
+  <data key="d7">The Corruption Prevention Department operates under the Independent Commission Against Corruption to prevent corruption in procurement processes.</data>
+  <data key="d8">anti-corruption efforts,organizational structure</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Corruption Prevention Department" target="303 Java Road, North Point">
+  <data key="d6">1.0</data>
+  <data key="d7">The Corruption Prevention Department is located at 303 Java Road, North Point in Hong Kong.</data>
+  <data key="d8">headquarters,location</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Contract Letting Process" target="Service Monitoring">
+  <data key="d6">1.0</data>
+  <data key="d7">The contract letting process leads to service monitoring, which involves evaluating contractor performance and service deliverables.</data>
+  <data key="d8">contract management,performance evaluation</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contract Letting Process" target="Management Supervision">
+  <data key="d6">1.0</data>
+  <data key="d7">Management provides supervision and oversight throughout the contract letting process as part of internal controls.</data>
+  <data key="d8">internal control,oversight</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Service Monitoring" target="Contractor Performance Evaluation Checklist">
+  <data key="d6">1.0</data>
+  <data key="d7">Service monitoring utilizes performance evaluation checklists to assess contractor performance and service quality.</data>
+  <data key="d8">performance assessment,quality control</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Service Monitoring" target="Management Supervision">
+  <data key="d6">1.0</data>
+  <data key="d7">Management provides supervision and oversight throughout the service monitoring process to ensure contract compliance.</data>
+  <data key="d8">oversight,performance management</data>
+  <data key="d9">chunk-25a66d5a2303fe7498b91a10735ad32b</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Contractor Performance Evaluation Checklist" target="Successful Tenderer">
+  <data key="d6">1.0</data>
+  <data key="d7">The checklist is used to evaluate the performance of the successful tenderer after contract award.</data>
+  <data key="d8">performance monitoring,quality assessment</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Contractor Performance Evaluation Checklist" target="Performance Rating System">
+  <data key="d6">1.0</data>
+  <data key="d7">The checklist utilizes a performance rating system from 0 (Very Poor) to 4 (Excellent) to assess contractor performance.</data>
+  <data key="d8">evaluation framework,scoring</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Tender" target="Bidder/Tenderer">
+  <data key="d6">1.0</data>
+  <data key="d7">Bidders submit a Tender and agree to abide by its terms for a specified period.</data>
+  <data key="d8">agreement,submission</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Bidder/Tenderer" target="Annex 3">
+  <data key="d6">1.0</data>
+  <data key="d7">Bidders must agree to abide by the anti-bribery and anti-collusion clauses in Annex 3.</data>
+  <data key="d8">compliance,legal obligation</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Bidder/Tenderer" target="Tender Specifications">
+  <data key="d6">1.0</data>
+  <data key="d7">Bidders must ensure their tender offers comply with all the stipulated Tender Specifications to be considered valid.</data>
+  <data key="d8">compliance,requirement</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Bidder/Tenderer" target="Tender Qualifications">
+  <data key="d6">1.0</data>
+  <data key="d7">A Bidder may submit Tender Qualifications, which are proposed changes or clarifications to the original tender offer.</data>
+  <data key="d8">amendment,submission</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Assessment Panel" target="Tender Qualifications">
+  <data key="d6">1.0</data>
+  <data key="d7">The Assessment Panel reviews any submitted Tender Qualifications and recommends whether to accept them or seek legal advice.</data>
+  <data key="d8">recommendation,review</data>
+  <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="User/Contract Administration Staff" target="Surprise Checks">
+  <data key="d6">1.0</data>
+  <data key="d7">User/Contract Administration Staff conduct surprise checks on cleaning and security contracts to verify work completion and adherence to schedules.</data>
+  <data key="d8">compliance monitoring,performance verification</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="User/Contract Administration Staff" target="Disciplinary Action">
+  <data key="d6">1.0</data>
+  <data key="d7">User/Contract Administration Staff take disciplinary action against contractors based on adverse performance records from site visits.</data>
+  <data key="d8">contract compliance,enforcement</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Accounting Staff" target="Invoices">
+  <data key="d6">1.0</data>
+  <data key="d7">Accounting Staff verify invoices and supporting documents before processing payments to contractors.</data>
+  <data key="d8">payment processing,verification</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337587</data>
+</edge>
+<edge source="Accounting Staff" target="Payment Claims">
+  <data key="d6">1.0</data>
+  <data key="d7">Accounting Staff counter-check payment claims and supporting documents before effecting payment to contractors.</data>
+  <data key="d8">processing,verification</data>
+  <data key="d9">chunk-b43b5117a644732f629aac3ba9e626fe</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Company / Organization" target="Successful Tenderer">
+  <data key="d6">1.0</data>
+  <data key="d7">The Company/Organization awards the contract to the successful tenderer after completing the evaluation process.</data>
+  <data key="d8">contract award,procurement</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Company / Organization" target="Unsuccessful Tenderers">
+  <data key="d6">1.0</data>
+  <data key="d7">The Company/Organization formally notifies unsuccessful tenderers that their bids were not selected.</data>
+  <data key="d8">notification,rejection</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Company / Organization" target="Warning Letter">
+  <data key="d6">1.0</data>
+  <data key="d7">The Company/Organization may issue warning letters to contractors who perform poorly as part of performance management.</data>
+  <data key="d8">corrective action,performance management</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Independent Commission Against Corruption" target="Hong Kong">
+  <data key="d6">1.0</data>
+  <data key="d7">The Independent Commission Against Corruption is based in and operates within Hong Kong.</data>
+  <data key="d8">jurisdiction,location</data>
+  <data key="d9">chunk-e3de1b6ad40a113f1b94da2e7f9672e3</data>
+  <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
+  <data key="d11">1757337588</data>
+</edge>
+<edge source="Software Development Agreement" target="XYZ Corporation">
+  <data key="d6">2.0</data>
+  <data key="d7">The Software Development Agreement outlines terms for software development services received by XYZ Corporation.&lt;SEP&gt;XYZ Corporation is the other party to the Software Development Agreement.</data>
+  <data key="d8">contract participation,contractual relationship,legal obligation,service agreement</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559234</data>
+</edge>
+<edge source="Software Development Agreement" target="Custom Web Application">
+  <data key="d6">3.0</data>
+  <data key="d7">The Software Development Agreement specifies the development of a custom web application with defined features.&lt;SEP&gt;The Software Development Agreement specifies the development of a custom web application with specific features.&lt;SEP&gt;The agreement outlines the terms for developing the custom web application with specific features.</data>
+  <data key="d8">deliverables,development objectives,development scope,project scope,project specification</data>
+  <data key="d9">chunk-24680041a8c2909e3937490f6b37969e&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="Software Development Agreement" target="ABC Company">
+  <data key="d6">2.0</data>
+  <data key="d7">The Software Development Agreement outlines terms for software development services provided by ABC Company.&lt;SEP&gt;ABC Company is the uploader and a signatory to the Software Development Agreement.</data>
+  <data key="d8">contract ownership,contractual relationship,legal document,service agreement</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559234</data>
+</edge>
+<edge source="Software Development Agreement" target="CONT_000001">
+  <data key="d6">1.0</data>
+  <data key="d7">The Software Development Agreement has the unique identifier CONT_000001.</data>
+  <data key="d8">contract identification,document reference</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757345042</data>
+</edge>
+<edge source="Software Development Agreement" target="$75,000.00">
+  <data key="d6">2.0</data>
+  <data key="d7">The Software Development Agreement specifies a contract amount of $75,000.00.&lt;SEP&gt;The Software Development Agreement specifies a total contract amount of $75,000.00.</data>
+  <data key="d8">contract value,financial terms</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559234</data>
+</edge>
+<edge source="Software Development Agreement" target="cross-company">
+  <data key="d6">1.0</data>
+  <data key="d7">The Software Development Agreement is classified as a cross-company contract.</data>
+  <data key="d8">business type,contract classification</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757345042</data>
+</edge>
+<edge source="Software Development Agreement" target="6 months">
+  <data key="d6">1.0</data>
+  <data key="d7">The Software Development Agreement estimates a total project duration of 6 months.</data>
+  <data key="d8">duration specification,project timeline</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757345042</data>
+</edge>
+<edge source="Software Development Agreement" target="Monthly Milestones">
+  <data key="d6">1.0</data>
+  <data key="d7">The Software Development Agreement includes monthly milestones for project progress tracking.</data>
+  <data key="d8">delivery schedule,progress tracking</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757345043</data>
+</edge>
+<edge source="Software Development Agreement" target="pending">
+  <data key="d6">1.0</data>
+  <data key="d7">The Software Development Agreement currently has a status of pending.</data>
+  <data key="d8">agreement state,contract status</data>
+  <data key="d9">chunk-45083b762ef788ababb088a5498632c9</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757345043</data>
+</edge>
+<edge source="Software Development Agreement" target="6-Month Project Duration">
+  <data key="d6">1.0</data>
+  <data key="d7">The agreement includes a 6-month project duration with monthly milestones.</data>
+  <data key="d8">project management,timeline specification</data>
+  <data key="d9">chunk-c25484da32943ee61904690db2580c4f</data>
+  <data key="d10">word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="ABC Company" target="XYZ Corporation">
+  <data key="d6">4.0</data>
+  <data key="d7">ABC Company and XYZ Corporation are parties to a Software Development Agreement for creating a custom web application.&lt;SEP&gt;ABC Company and XYZ Corporation are parties to a software development services agreement.&lt;SEP&gt;ABC Company and XYZ Corporation are parties to the Software Development Agreement for collaborative software development.</data>
+  <data key="d8">business agreement,business partnership,contractual agreement,service agreement,service provision,software development</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="ABC Company" target="Agreement">
+  <data key="d6">1.0</data>
+  <data key="d7">The agreement involves ABC Company as one of the contracting parties.</data>
+  <data key="d8">contractual relationship,party involvement</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558982</data>
+</edge>
+<edge source="ABC Company" target="Custom Web Application">
+  <data key="d6">1.0</data>
+  <data key="d7">ABC Company is commissioning the development of the custom web application through the agreement.</data>
+  <data key="d8">client requirement,product development</data>
+  <data key="d9">chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559234</data>
+</edge>
+<edge source="XYZ Corporation" target="Custom Web Application">
+  <data key="d6">1.0</data>
+  <data key="d7">XYZ Corporation is responsible for developing the custom web application for ABC Company.</data>
+  <data key="d8">development,product creation</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558982</data>
+</edge>
+<edge source="XYZ Corporation" target="Agreement">
+  <data key="d6">1.0</data>
+  <data key="d7">The agreement involves XYZ Corporation as one of the contracting parties.</data>
+  <data key="d8">contractual relationship,party involvement</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558982</data>
+</edge>
+<edge source="Custom Web Application" target="User Authentication System">
+  <data key="d6">4.0</data>
+  <data key="d7">The custom web application includes a user authentication system as one of its core features.&lt;SEP&gt;The custom web application must include a user authentication system as specified.&lt;SEP&gt;The custom web application includes a user authentication system as part of its specifications.&lt;SEP&gt;User authentication system is one of the specified features of the custom web application.</data>
+  <data key="d8">feature inclusion,technical specification</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="Custom Web Application" target="Dashboard Interface">
+  <data key="d6">4.0</data>
+  <data key="d7">The custom web application includes a dashboard interface as one of its core features.&lt;SEP&gt;The dashboard interface is a required component of the custom web application.&lt;SEP&gt;The custom web application includes a dashboard interface as part of its specifications.&lt;SEP&gt;Dashboard interface is one of the specified features of the custom web application.</data>
+  <data key="d8">feature inclusion,technical specification</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="Custom Web Application" target="Data Analytics Features">
+  <data key="d6">4.0</data>
+  <data key="d7">The custom web application includes data analytics features as one of its core features.&lt;SEP&gt;Data analytics features are specified requirements for the web application.&lt;SEP&gt;The custom web application includes data analytics features as part of its specifications.&lt;SEP&gt;Data analytics features are specified components of the custom web application.</data>
+  <data key="d8">feature inclusion,technical specification</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="Custom Web Application" target="Mobile Responsiveness">
+  <data key="d6">4.0</data>
+  <data key="d7">The custom web application includes mobile responsiveness as a required feature.&lt;SEP&gt;Mobile responsiveness is a mandatory technical requirement for the web application.&lt;SEP&gt;The custom web application includes mobile responsiveness as part of its specifications.&lt;SEP&gt;Mobile responsiveness is a specified requirement for the custom web application.</data>
+  <data key="d8">compatibility requirement,feature inclusion,technical specification</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-c25484da32943ee61904690db2580c4f&lt;SEP&gt;chunk-45083b762ef788ababb088a5498632c9&lt;SEP&gt;chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001&lt;SEP&gt;test_contract_analysis&lt;SEP&gt;word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="CONT_000001" target="Test Contract">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test Contract is uniquely identified by the ID CONT_000001.</data>
+  <data key="d8">document reference,identification</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559285</data>
+</edge>
+<edge source="CONT_000001" target="Contract ID">
+  <data key="d6">1.0</data>
+  <data key="d7">The Contract ID field contains the unique identifier "CONT_000001" for the contract.</data>
+  <data key="d8">identifier storage,metadata assignment</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559285</data>
+</edge>
+<edge source="Monthly Milestones" target="Software Development Services">
+  <data key="d6">1.0</data>
+  <data key="d7">The software development services will be measured and tracked through monthly milestones.</data>
+  <data key="d8">progress tracking,project management</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558982</data>
+</edge>
+<edge source="Monthly Milestones" target="Six-Month Project Duration">
+  <data key="d6">1.0</data>
+  <data key="d7">The six-month project duration is structured with monthly milestones for progress monitoring.</data>
+  <data key="d8">progress tracking,project timeline</data>
+  <data key="d9">chunk-24680041a8c2909e3937490f6b37969e</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559234</data>
+</edge>
+<edge source="Monthly Milestones" target="6-Month Project Duration">
+  <data key="d6">1.0</data>
+  <data key="d7">The 6-month project duration includes monthly milestones for progress tracking.</data>
+  <data key="d8">project planning,timeline structure</data>
+  <data key="d9">chunk-c25484da32943ee61904690db2580c4f</data>
+  <data key="d10">word_analysis_1757559807</data>
+  <data key="d11">1757559845</data>
+</edge>
+<edge source="Test Contract" target="Contract Analysis">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test Contract is the object being analyzed in the contract analysis process.</data>
+  <data key="d8">document review,evaluation process</data>
+  <data key="d9">chunk-572aa59ab24d17397a6cf5d3b53041ae</data>
+  <data key="d10">word_analysis_test</data>
+  <data key="d11">1757482995</data>
+</edge>
+<edge source="Test Contract" target="$50,000.00">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test Contract specifies a financial amount of $50,000.00.</data>
+  <data key="d8">contract value,financial agreement</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559285</data>
+</edge>
+<edge source="Test Contract" target="Software Development Services">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test Contract is for the provision of software development services.</data>
+  <data key="d8">contract purpose,service agreement</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559285</data>
+</edge>
+<edge source="Test Contract" target="Contract Title">
+  <data key="d6">1.0</data>
+  <data key="d7">The Contract Title field contains the value "Test Contract" as the name of the document.</data>
+  <data key="d8">document naming,metadata assignment</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559286</data>
+</edge>
+<edge source="Text Analysis Content" target="Suspicious Words">
+  <data key="d6">1.0</data>
+  <data key="d7">Text Analysis Content involves checking for the presence of Suspicious Words to identify potential concerns.</data>
+  <data key="d8">content examination,risk detection</data>
+  <data key="d9">chunk-79cc91933ce4dfcf4cf7f40b60b0decb</data>
+  <data key="d10">word_analysis_1757483119</data>
+  <data key="d11">1757483132</data>
+</edge>
+<edge source="Test document" target="API">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test document is specifically designed to check the connectivity and proper functioning of the API.</data>
+  <data key="d8">connectivity verification,functionality check</data>
+  <data key="d9">chunk-fee2a658c6f3a044db68cc3512210045</data>
+  <data key="d10">api_test</data>
+  <data key="d11">1757559668</data>
+</edge>
+<edge source="Test document" target="Connectivity Check">
+  <data key="d6">1.0</data>
+  <data key="d7">The Test document serves the specific purpose of performing connectivity checks for systems or APIs.</data>
+  <data key="d8">functionality testing,verification purpose</data>
+  <data key="d9">chunk-fee2a658c6f3a044db68cc3512210045</data>
+  <data key="d10">api_test</data>
+  <data key="d11">1757559668</data>
+</edge>
+<edge source="Software Development Services" target="6-Month Project Duration">
+  <data key="d6">1.0</data>
+  <data key="d7">The software development services are scheduled to be delivered over a 6-month period.</data>
+  <data key="d8">project timeline,service delivery</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558982</data>
+</edge>
+<edge source="Software Development Services" target="Agreement">
+  <data key="d6">1.0</data>
+  <data key="d7">The agreement defines the scope and terms of software development services.</data>
+  <data key="d8">contractual scope,service definition</data>
+  <data key="d9">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
+  <data key="d10">test_contract_analysis</data>
+  <data key="d11">1757558983</data>
+</edge>
+<edge source="Software Development Services" target="Contract Content">
+  <data key="d6">1.0</data>
+  <data key="d7">The Contract Content field describes that the contract is for software development services.</data>
+  <data key="d8">metadata assignment,purpose description</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559286</data>
+</edge>
+<edge source="$50,000.00" target="Contract Amount">
+  <data key="d6">1.0</data>
+  <data key="d7">The Contract Amount field specifies the monetary value of "$50,000.00" for the contract.</data>
+  <data key="d8">metadata assignment,value specification</data>
+  <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
+  <data key="d10">contract_CONT_000001</data>
+  <data key="d11">1757559285</data>
+</edge>
+</graph></graphml>

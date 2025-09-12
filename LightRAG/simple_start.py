@@ -9,7 +9,7 @@ import sys
 # Set basic configuration for LightRAG
 os.environ['WORKING_DIR'] = '/Users/lcy/ICAC Hackathon/LightRAG/rag_storage'
 os.environ['HOST'] = '0.0.0.0'
-os.environ['PORT'] = '8020'
+os.environ['PORT'] = '9621'
 
 print("🚀 Starting LightRAG server...")
 print(f"   Server: {os.environ['HOST']}:{os.environ['PORT']}")

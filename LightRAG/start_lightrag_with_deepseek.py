@@ -23,7 +23,7 @@ os.environ['EMBEDDING_BINDING_HOST'] = 'http://localhost:11434'
 os.environ['EMBEDDING_DIM'] = '1024'
 os.environ['WORKING_DIR'] = '/Users/lcy/ICAC Hackathon/LightRAG/rag_storage'
 os.environ['HOST'] = '0.0.0.0'
-os.environ['PORT'] = '8020'
+os.environ['PORT'] = '9621'
 
 print("🚀 Starting LightRAG server with DeepSeek configuration...")
 print(f"   LLM: {os.environ['LLM_MODEL']} via {os.environ['LLM_BINDING_HOST']}")

@@ -750,5 +750,69 @@
     "create_time": 1757559845,
     "update_time": 1757559845,
     "_id": "doc-c25484da32943ee61904690db2580c4f"
+  },
+  "doc-80ef43fa053a854dd1351e65ac165cb6": {
+    "relation_pairs": [
+      [
+        "Pre-Existing Intellectual Property",
+        "Provider"
+      ],
+      [
+        "Client",
+        "Confidential Information"
+      ],
+      [
+        "Client",
+        "Provider"
+      ],
+      [
+        "Agreement",
+        "Governing Law"
+      ],
+      [
+        "Agreement",
+        "Schedule"
+      ],
+      [
+        "Independent Contractor",
+        "Provider"
+      ],
+      [
+        "Agreement",
+        "Material Breach"
+      ],
+      [
+        "Provider",
+        "Services"
+      ],
+      [
+        "Deliverables",
+        "Provider"
+      ],
+      [
+        "Confidential Information",
+        "Provider"
+      ],
+      [
+        "Client",
+        "Client Materials"
+      ],
+      [
+        "Client",
+        "Finance Charge"
+      ],
+      [
+        "Client",
+        "Fees"
+      ],
+      [
+        "Agreement",
+        "Service Order"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1757676777,
+    "update_time": 1757676777,
+    "_id": "doc-80ef43fa053a854dd1351e65ac165cb6"
   }
 }

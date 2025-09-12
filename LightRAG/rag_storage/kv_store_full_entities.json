@@ -284,5 +284,28 @@
     "create_time": 1757559845,
     "update_time": 1757559845,
     "_id": "doc-c25484da32943ee61904690db2580c4f"
+  },
+  "doc-80ef43fa053a854dd1351e65ac165cb6": {
+    "entity_names": [
+      "Governing Law",
+      "Deliverables",
+      "Provider",
+      "Schedule",
+      "Services",
+      "Confidential Information",
+      "Finance Charge",
+      "Fees",
+      "Pre-Existing Intellectual Property",
+      "Client",
+      "Material Breach",
+      "Independent Contractor",
+      "Service Order",
+      "Client Materials",
+      "Agreement"
+    ],
+    "count": 15,
+    "create_time": 1757676777,
+    "update_time": 1757676777,
+    "_id": "doc-80ef43fa053a854dd1351e65ac165cb6"
   }
 }

@@ -198,10 +198,10 @@
 <node id="Services">
   <data key="d0">Services</data>
   <data key="d1">Category</data>
-  <data key="d2">The Services are the specific provisions detailed in the Form of Tender that the successful tenderer will supply to the Employer.</data>
-  <data key="d3">chunk-64b1aedade1852c2ff032d3a6e900995</data>
-  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
-  <data key="d5">1757337582</data>
+  <data key="d2">The Services are the specific provisions detailed in the Form of Tender that the successful tenderer will supply to the Employer.&lt;SEP&gt;Services refer to the work to be performed by Provider for Client as described in a Service Order.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6&lt;SEP&gt;chunk-64b1aedade1852c2ff032d3a6e900995</data>
+  <data key="d4">3fc968ac-540d-456d-808c-585b077063f3.pdf&lt;SEP&gt;word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
 </node>
 <node id="Hong Kong Dollars">
   <data key="d0">Hong Kong Dollars</data>
@@ -1182,10 +1182,10 @@
 <node id="Agreement">
   <data key="d0">Agreement</data>
   <data key="d1">Document</data>
-  <data key="d2">The agreement is the contract document outlining terms for software development services between ABC Company and XYZ Corporation.</data>
-  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d</data>
-  <data key="d4">test_contract_analysis</data>
-  <data key="d5">1757558982</data>
+  <data key="d2">The agreement is the contract document outlining terms for software development services between ABC Company and XYZ Corporation.&lt;SEP&gt;The Agreement refers to the Terms and Conditions document, including any attached Schedules and mutually executed Service Orders, governing the relationship between Client and Provider.</data>
+  <data key="d3">chunk-f1cdacfbad385a8fc723c83e0e824e8d&lt;SEP&gt;chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">test_contract_analysis&lt;SEP&gt;word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
 </node>
 <node id="Cross-Company Contract">
   <data key="d0">Cross-Company Contract</data>
@@ -1258,6 +1258,110 @@
   <data key="d3">chunk-fee2a658c6f3a044db68cc3512210045</data>
   <data key="d4">api_test</data>
   <data key="d5">1757559668</data>
+</node>
+<node id="Client">
+  <data key="d0">Client</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Client is the individual or entity purchasing Services from Provider as defined in the Agreement.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Provider">
+  <data key="d0">Provider</data>
+  <data key="d1">Organization</data>
+  <data key="d2">Provider is the entity providing Services to Client as defined in the Agreement, specifically identified as [Your Company Name].</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Service Order">
+  <data key="d0">Service Order</data>
+  <data key="d1">Document</data>
+  <data key="d2">Service Order is a mutually executed document that references the Terms and Conditions and describes specific Services to be provided.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Confidential Information">
+  <data key="d0">Confidential Information</data>
+  <data key="d1">Category</data>
+  <data key="d2">Confidential Information includes all non-public business, financial, technical, and operational information that both parties agree to protect.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Deliverables">
+  <data key="d0">Deliverables</data>
+  <data key="d1">Product</data>
+  <data key="d2">Deliverables are the final outputs created specifically for Client, for which Provider grants a license upon full payment.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Fees">
+  <data key="d0">Fees</data>
+  <data key="d1">Category</data>
+  <data key="d2">Fees are the payments Client agrees to pay Provider as set forth in the Service Order for Services rendered.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Schedule">
+  <data key="d0">Schedule</data>
+  <data key="d1">Document</data>
+  <data key="d2">Schedule refers to any attached documents that form part of the Agreement along with the Terms and Conditions and Service Orders.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Material Breach">
+  <data key="d0">Material Breach</data>
+  <data key="d1">Category</data>
+  <data key="d2">Material Breach is a significant violation of the Agreement that allows either party to terminate if not cured within thirty days after written notice.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Finance Charge">
+  <data key="d0">Finance Charge</data>
+  <data key="d1">Category</data>
+  <data key="d2">Finance Charge is a penalty fee applied to late payments, typically 1.5% per month or the maximum rate allowed by law.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Pre-Existing Intellectual Property">
+  <data key="d0">Pre-Existing Intellectual Property</data>
+  <data key="d1">Category</data>
+  <data key="d2">Pre-Existing Intellectual Property refers to intellectual property rights that each party owned before entering into the Agreement.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Client Materials">
+  <data key="d0">Client Materials</data>
+  <data key="d1">Category</data>
+  <data key="d2">Client Materials include logos, data, and other materials provided by Client that Provider may use to perform the Services.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Governing Law">
+  <data key="d0">Governing Law</data>
+  <data key="d1">Category</data>
+  <data key="d2">Governing Law specifies that the Agreement is governed by the laws of the State of [Your State/Province] without regard to conflict of laws principles.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
+</node>
+<node id="Independent Contractor">
+  <data key="d0">Independent Contractor</data>
+  <data key="d1">Category</data>
+  <data key="d2">Independent Contractor status clarifies that Provider is not an employee, agent, or partner of Client and is responsible for its own taxes and benefits.</data>
+  <data key="d3">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d4">word_analysis_1757676721</data>
+  <data key="d5">1757676776</data>
 </node>
 <edge source="Procurement Staff" target="Approved List of Contractors">
   <data key="d6">1.0</data>
@@ -1730,6 +1834,14 @@
   <data key="d9">chunk-3db726e189808c3ec70648d09201b168</data>
   <data key="d10">3fc968ac-540d-456d-808c-585b077063f3.pdf</data>
   <data key="d11">1757337587</data>
+</edge>
+<edge source="Services" target="Provider">
+  <data key="d6">1.0</data>
+  <data key="d7">Provider is obligated to perform Services for Client as described in the applicable Service Order.</data>
+  <data key="d8">professional work,service provision</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
 </edge>
 <edge source="Prevention of Bribery Ordinance" target="Quotation Exercise">
   <data key="d6">1.0</data>
@@ -2451,6 +2563,38 @@
   <data key="d10">contract_CONT_000001</data>
   <data key="d11">1757559286</data>
 </edge>
+<edge source="Agreement" target="Service Order">
+  <data key="d6">1.0</data>
+  <data key="d7">The Agreement governs and incorporates any Service Orders that are mutually executed by the parties.</data>
+  <data key="d8">contractual framework,governing document</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676776</data>
+</edge>
+<edge source="Agreement" target="Schedule">
+  <data key="d6">1.0</data>
+  <data key="d7">Schedules are attached documents that form part of the overall Agreement along with the Terms and Conditions.</data>
+  <data key="d8">contractual component,document inclusion</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676776</data>
+</edge>
+<edge source="Agreement" target="Material Breach">
+  <data key="d6">1.0</data>
+  <data key="d7">Material Breach of the Agreement allows either party to terminate the Agreement if not cured within thirty days.</data>
+  <data key="d8">contractual violation,termination clause</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Agreement" target="Governing Law">
+  <data key="d6">1.0</data>
+  <data key="d7">The Agreement is governed by the laws of a specific state as specified in the Governing Law clause.</data>
+  <data key="d8">jurisdictional rules,legal framework</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
 <edge source="$50,000.00" target="Contract Amount">
   <data key="d6">1.0</data>
   <data key="d7">The Contract Amount field specifies the monetary value of "$50,000.00" for the contract.</data>
@@ -2458,5 +2602,77 @@
   <data key="d9">chunk-40f6ec754a2ad62bef04c518d5333995</data>
   <data key="d10">contract_CONT_000001</data>
   <data key="d11">1757559285</data>
+</edge>
+<edge source="Client" target="Provider">
+  <data key="d6">1.0</data>
+  <data key="d7">Client purchases Services from Provider under the terms defined in the Agreement and Service Orders.</data>
+  <data key="d8">business relationship,service agreement</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676776</data>
+</edge>
+<edge source="Client" target="Fees">
+  <data key="d6">1.0</data>
+  <data key="d7">Client is responsible for paying Provider the agreed-upon Fees for Services rendered, with specific payment terms.</data>
+  <data key="d8">financial obligation,payment terms</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Client" target="Confidential Information">
+  <data key="d6">1.0</data>
+  <data key="d7">Client agrees to hold Provider's Confidential Information in confidence and not disclose it except as necessary.</data>
+  <data key="d8">confidentiality obligation,information protection</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Client" target="Finance Charge">
+  <data key="d6">1.0</data>
+  <data key="d7">Client may be subject to Finance Charges for late payments of invoices as specified in the Agreement.</data>
+  <data key="d8">financial obligation,payment penalty</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Client" target="Client Materials">
+  <data key="d6">1.0</data>
+  <data key="d7">Client grants Provider a limited license to use Client Materials solely for the purpose of providing the Services.</data>
+  <data key="d8">license grant,service provision</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Provider" target="Deliverables">
+  <data key="d6">1.0</data>
+  <data key="d7">Provider creates Deliverables for Client and grants a license to use them upon full payment of all fees.</data>
+  <data key="d8">intellectual property,license grant</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Provider" target="Confidential Information">
+  <data key="d6">1.0</data>
+  <data key="d7">Provider agrees to hold Client's Confidential Information in confidence and not disclose it except as necessary.</data>
+  <data key="d8">confidentiality obligation,information protection</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Provider" target="Pre-Existing Intellectual Property">
+  <data key="d6">1.0</data>
+  <data key="d7">Provider retains all ownership rights to its Pre-Existing Intellectual Property under the Agreement.</data>
+  <data key="d8">intellectual property rights,ownership retention</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
+</edge>
+<edge source="Provider" target="Independent Contractor">
+  <data key="d6">1.0</data>
+  <data key="d7">Provider operates as an Independent Contractor rather than an employee or agent of the Client.</data>
+  <data key="d8">business relationship,employment status</data>
+  <data key="d9">chunk-80ef43fa053a854dd1351e65ac165cb6</data>
+  <data key="d10">word_analysis_1757676721</data>
+  <data key="d11">1757676777</data>
 </edge>
 </graph></graphml>

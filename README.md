@@ -57,6 +57,124 @@ ICAC Hackathon/
 - Node.js 18+ and npm
 - C++ compiler (clang++ on macOS)
 - pip or conda
+- Ollama (for local LLM support)
+
+### Installing Ollama
+
+Ollama enables you to run large language models locally, providing privacy and reducing dependency on external APIs. This is especially useful for the LightRAG AI engine.
+
+#### macOS Installation
+
+**Method 1: Download from Official Website (Recommended)**
+1. Visit [https://ollama.ai](https://ollama.ai)
+2. Click "Download for macOS"
+3. Open the downloaded `.dmg` file
+4. Drag Ollama to Applications folder
+5. Launch Ollama from Applications
+
+**Method 2: Using Homebrew**
+```bash
+brew install ollama
+```
+
+#### Linux Installation
+
+**Ubuntu/Debian:**
+```bash
+curl -fsSL https://ollama.ai/install.sh | sh
+```
+
+**Manual Installation:**
+```bash
+# Download and install
+curl -L https://ollama.ai/download/ollama-linux-amd64 -o /usr/local/bin/ollama
+chmod +x /usr/local/bin/ollama
+
+# Create ollama user (optional but recommended)
+sudo useradd -r -s /bin/false -m -d /usr/share/ollama ollama
+```
+
+#### Windows Installation
+
+1. Visit [https://ollama.ai](https://ollama.ai)
+2. Click "Download for Windows"
+3. Run the downloaded installer
+4. Follow the installation wizard
+
+#### Verifying Installation
+
+After installation, verify Ollama is working:
+```bash
+ollama --version
+```
+
+#### Installing and Running Models
+
+**Start Ollama service:**
+```bash
+# The service should start automatically, but you can start it manually:
+ollama serve
+```
+
+**Download and run the required model:**
+```bash
+# BGE-M3 model (required for LightRAG)
+ollama pull bge-m3:latest
+
+# List available models
+ollama list
+
+# Run the model interactively
+ollama run bge-m3:latest
+```
+
+#### Configuring LightRAG with Ollama
+
+To use Ollama with LightRAG, update your `LightRAG/config.ini`:
+
+```ini
+[DEFAULT]
+model_provider = ollama
+base_url = http://localhost:11434
+model_name = bge-m3:latest
+# No API key needed for local Ollama
+```
+
+Or use the Ollama-specific example:
+```bash
+cd LightRAG
+python examples/lightrag_ollama_demo.py
+```
+
+#### Ollama Performance Tips
+
+- **Memory**: Ensure you have sufficient RAM (4GB+ recommended for BGE-M3)
+- **GPU**: Ollama automatically uses GPU acceleration if available (NVIDIA/AMD)
+- **BGE-M3**: This embedding model is optimized for multilingual retrieval and is specifically designed for RAG applications
+
+#### Troubleshooting Ollama
+
+**Service not running:**
+```bash
+# Check if Ollama is running
+curl http://localhost:11434/api/version
+
+# Start Ollama service
+ollama serve
+
+# Check Ollama logs (macOS)
+tail -f ~/.ollama/logs/server.log
+```
+
+**Model download issues:**
+```bash
+# Clear cache and retry
+ollama rm <model_name>
+ollama pull <model_name>
+
+# Check available space
+df -h
+```
 
 ### 1. Clone the Repository
 ```bash
@@ -82,15 +200,6 @@ npm install
 cd ..
 ```
 
-### 5. Setup LightRAG
-```bash
-cd LightRAG
-pip install -e .
-# Copy environment configuration
-cp config.ini.example config.ini
-# Edit config.ini with your API keys if needed
-cd ..
-```
 
 ## 🚀 Running the System
 
@@ -104,7 +213,7 @@ Run all components with these commands in separate terminals:
 ```bash
 cd LightRAG
 python start_lightrag_with_deepseek.py
-# LightRAG will be available at http://localhost:8020
+# LightRAG will be available at http://localhost:9621
 ```
 
 **Terminal 2 - Start Backend API:**

@@ -211,5 +211,22 @@
       "processing_start_time": 1757559807,
       "processing_end_time": 1757559845
     }
+  },
+  "doc-80ef43fa053a854dd1351e65ac165cb6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-80ef43fa053a854dd1351e65ac165cb6"
+    ],
+    "content_summary": "Text Analysis Content:\nTERMS AND CONDITIONS OF SERVICE\n1. Definitions\n\n\"Agreement\" means these Terms and Conditions, any attached Schedules, and any mutually executed Service Order.\n\n\"Client\" means the individual or entity purchasing the Services.\n\n\"...",
+    "content_length": 4801,
+    "created_at": "2025-09-12T11:32:01.045106+00:00",
+    "updated_at": "2025-09-12T11:32:57.701296+00:00",
+    "file_path": "word_analysis_1757676721",
+    "track_id": "insert_20250912_193201_d24fd621",
+    "metadata": {
+      "processing_start_time": 1757676721,
+      "processing_end_time": 1757676777
+    }
   }
 }

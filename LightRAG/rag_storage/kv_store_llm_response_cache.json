@@ -1075,5 +1075,27 @@
     "create_time": 1757676776,
     "update_time": 1757676776,
     "_id": "default:extract:371ba10a61e132a12bd42934534d9161"
+  },
+  "mix:keywords:c61094155fb53e0b67c11235cadfcbf2": {
+    "return": "{\"high_level_keywords\": [\"Contract analysis\", \"Corruption risk\", \"Risk assessment\", \"Legal compliance\"], \"low_level_keywords\": [\"Contract\", \"Bribery\", \"Fraud\", \"Kickbacks\", \"Conflict of interest\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "can you analyse a contract whether it has corruption risk",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 10,
+      "max_entity_tokens": 10000,
+      "max_relation_tokens": 10000,
+      "max_total_tokens": 32000,
+      "hl_keywords": [],
+      "ll_keywords": [],
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1757678892,
+    "update_time": 1757678892,
+    "_id": "mix:keywords:c61094155fb53e0b67c11235cadfcbf2"
   }
 }

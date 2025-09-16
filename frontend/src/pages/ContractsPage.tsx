@@ -20,6 +20,7 @@ import { Input } from '@/components/ui/Input';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
+import { ContractDetailsModal } from '@/components/ui/ContractDetailsModal';
 import { useAuth } from '@/contexts/AuthContext';
 import { contractAPI, type PendingContract } from '@/lib/api';
 import { formatCurrency, formatDate, truncateHash } from '@/lib/utils';
@@ -35,6 +36,8 @@ export function ContractsPage() {
   const [filter, setFilter] = useState<FilterType>('all');
   const [sortBy, setSortBy] = useState<SortType>('date');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
+  const [selectedContract, setSelectedContract] = useState<PendingContract | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Contract loading is handled by useContracts hook
 
@@ -45,12 +48,30 @@ export function ContractsPage() {
         // Clear cache and refresh contracts after signing
         clearContractsCache();
         await refetch();
+        // Update the selected contract if it's currently displayed
+        if (selectedContract && selectedContract.contract_id === contractId) {
+          // Find the updated contract from the refreshed list
+          const updatedContract = contracts.find(c => c.contract_id === contractId);
+          if (updatedContract) {
+            setSelectedContract(updatedContract);
+          }
+        }
       } else {
         console.error('Sign contract error:', response.message);
       }
     } catch (error) {
       console.error('Error signing contract:', error);
     }
+  };
+
+  const handleViewContract = (contract: PendingContract) => {
+    setSelectedContract(contract);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedContract(null);
   };
 
   // Filter contracts based on current filter
@@ -354,7 +375,11 @@ export function ContractsPage() {
 
                   {/* Actions */}
                   <div className="flex flex-col sm:flex-row gap-2 lg:ml-6">
-                    <Button variant="outline" size="sm">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={() => handleViewContract(contract)}
+                    >
                       <Eye size={16} className="mr-2" />
                       View
                     </Button>
@@ -389,6 +414,16 @@ export function ContractsPage() {
       )}
 
       {/* Pagination could be added here */}
+
+      {/* Contract Details Modal */}
+      <ContractDetailsModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        contract={selectedContract}
+        onSign={handleSignContract}
+        canSign={selectedContract ? canSign(selectedContract) : false}
+        currentUserId={user?.user_id}
+      />
     </div>
   );
 }
